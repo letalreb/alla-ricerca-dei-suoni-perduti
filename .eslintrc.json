@@ -1,0 +1,8 @@
+{
+  "extends": ["next/core-web-vitals"],
+  "rules": {
+    "react/prop-types": "off",
+    "react/jsx-key": "warn",
+    "@typescript-eslint/no-unused-vars": "warn"
+  }
+}
