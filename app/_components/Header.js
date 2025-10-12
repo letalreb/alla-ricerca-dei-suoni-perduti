@@ -8,8 +8,10 @@ export default function Header() {
         <Link href="/" className={styles.logo}>
           Giulini Family Estates
         </Link>
-        <nav>
-          {/* Add more navigation links if needed */}
+        <nav className={styles.navigation}>
+          <Link href="/" className={styles.navLink}>Home</Link>
+          <Link href="/properties" className={styles.navLink}>Properties</Link>
+          <Link href="/book" className={styles.navLink}>Book</Link>
         </nav>
       </div>
     </header>

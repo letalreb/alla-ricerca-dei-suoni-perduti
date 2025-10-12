@@ -1,0 +1,245 @@
+/* Chapter page styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f6f0 0%, #f0ebe2 100%);
+}
+
+.breadcrumb {
+  margin-bottom: 2rem;
+}
+
+.breadcrumbLink {
+  color: #660000;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  border: 1px solid rgba(102, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+.breadcrumbLink:hover {
+  background: rgba(102, 0, 0, 0.1);
+  transform: translateX(-2px);
+}
+
+.chapter {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(102, 0, 0, 0.1);
+}
+
+.chapterHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid rgba(102, 0, 0, 0.1);
+}
+
+.chapterTitle {
+  font-size: 2.5rem;
+  color: #660000;
+  margin: 0 0 1rem 0;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-weight: 600;
+}
+
+.chapterSubtitle {
+  font-size: 1.5rem;
+  color: #9e0c0c;
+  margin: 0 0 1rem 0;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.pageInfo {
+  display: inline-block;
+  background: linear-gradient(135deg, #660000 0%, #8b0000 100%);
+  color: #fffbec;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(102, 0, 0, 0.3);
+}
+
+.chapterContent {
+  line-height: 1.8;
+  color: #333;
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.introduction {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(102, 0, 0, 0.03);
+  border-left: 4px solid #660000;
+  border-radius: 4px;
+}
+
+.chapterContent h3 {
+  color: #660000;
+  font-size: 1.4rem;
+  margin: 2.5rem 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(102, 0, 0, 0.2);
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.featureList li {
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+  background: rgba(102, 0, 0, 0.02);
+  border-radius: 4px;
+  padding-left: 1rem;
+}
+
+.featureList li strong {
+  color: #660000;
+}
+
+.comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.comparisonItem {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  border: 1px solid rgba(102, 0, 0, 0.1);
+}
+
+.comparisonItem h4 {
+  color: #660000;
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+}
+
+.comparisonItem ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.comparisonItem li {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.note {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #fff4dd 0%, #ffe6c7 100%);
+  border-radius: 8px;
+  border-left: 4px solid #9e0c0c;
+}
+
+.note h4 {
+  color: #660000;
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+}
+
+.note p {
+  margin: 0;
+  color: #444;
+}
+
+.chapterNavigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(102, 0, 0, 0.2);
+}
+
+.navButton {
+  display: inline-block;
+  color: #660000;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(102, 0, 0, 0.2);
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.navButton:hover {
+  background: rgba(102, 0, 0, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .chapter {
+    padding: 1.5rem;
+  }
+  
+  .chapterTitle {
+    font-size: 2rem;
+  }
+  
+  .chapterSubtitle {
+    font-size: 1.2rem;
+  }
+  
+  .comparison {
+    grid-template-columns: 1fr;
+  }
+  
+  .chapterNavigation {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .navButton {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .chapter {
+    padding: 1rem;
+  }
+  
+  .chapterTitle {
+    font-size: 1.5rem;
+  }
+  
+  .chapterSubtitle {
+    font-size: 1rem;
+  }
+  
+  .introduction {
+    padding: 1rem;
+  }
+  
+  .comparisonItem {
+    padding: 1rem;
+  }
+  
+  .note {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,282 @@
+/* Modern CSS for the book index page */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8f6f0 0%, #f0ebe2 100%);
+  min-height: 100vh;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height: 1.6;
+}
+
+/* Book Cover Section */
+.coverSection {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+
+.coverImage {
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(102, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.coverImage:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(102, 0, 0, 0.4);
+}
+
+/* Initial Sections */
+.initialSections {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  border-left: 4px solid #660000;
+}
+
+/* Table of Contents Header */
+.tocHeader {
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #660000 0%, #8b0000 100%);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(102, 0, 0, 0.3);
+}
+
+.tocHeader h2 {
+  color: #fffbec;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Styling */
+.section {
+  margin: 0.8rem 0;
+  padding: 0.5rem;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+}
+
+.mainSection {
+  margin: 1.2rem 0;
+  padding: 1rem;
+  background: rgba(102, 0, 0, 0.05);
+  border-radius: 6px;
+  border-left: 3px solid #660000;
+}
+
+.section:hover,
+.mainSection:hover {
+  background: rgba(102, 0, 0, 0.08);
+}
+
+.sectionLink {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.sectionLink:hover {
+  color: #660000;
+}
+
+.pageNumber {
+  font-size: 0.9rem;
+  color: #9e0c0c;
+  font-weight: 600;
+  min-width: 60px;
+  background: rgba(158, 12, 12, 0.1);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.sectionTitle {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.sectionTitle strong,
+.mainSection .sectionTitle {
+  font-weight: 600;
+  color: #660000;
+}
+
+/* Author Sections */
+.authorSection {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  border: 1px solid rgba(102, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.authorName {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #660000;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  background: linear-gradient(135deg, #fffbec 0%, #fff4dd 100%);
+  border-radius: 4px;
+  border-left: 3px solid #9e0c0c;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Chapters Section */
+.chaptersSection {
+  margin: 2rem 0;
+}
+
+/* Essays Section */
+.essaysSection {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #fff4dd 0%, #ffe6c7 100%);
+  border-radius: 12px;
+  border: 2px solid rgba(102, 0, 0, 0.1);
+}
+
+.sectionHeader {
+  color: #660000;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+}
+
+.essayItem {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 6px;
+  border-left: 3px solid #bf938e;
+  transition: all 0.2s ease;
+}
+
+.essayItem:hover {
+  background: rgba(255, 255, 255, 0.9);
+  border-left-color: #660000;
+  transform: translateX(5px);
+}
+
+/* Appendices Section */
+.appendicesSection {
+  margin: 3rem 0;
+}
+
+.appendixItem {
+  margin: 1.5rem 0;
+}
+
+.singleAppendix {
+  padding: 1rem;
+  background: rgba(255, 251, 238, 0.8);
+  border-radius: 6px;
+  border: 1px solid rgba(102, 0, 0, 0.1);
+}
+
+/* Final Sections */
+.finalSections {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: rgba(102, 0, 0, 0.03);
+  border-radius: 8px;
+  border: 1px solid rgba(102, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .coverImage {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .sectionLink {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .pageNumber {
+    align-self: flex-start;
+    min-width: auto;
+  }
+  
+  .tocHeader h2 {
+    font-size: 1.4rem;
+  }
+  
+  .authorName {
+    font-size: 1rem;
+  }
+  
+  .sectionTitle {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+  
+  .coverSection {
+    padding: 1rem;
+  }
+  
+  .authorSection,
+  .essaysSection {
+    padding: 1rem;
+  }
+  
+  .essayItem:hover {
+    transform: none;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .container {
+    background: white;
+    box-shadow: none;
+  }
+  
+  .coverImage {
+    box-shadow: none;
+  }
+  
+  .tocHeader {
+    background: white;
+    color: black;
+    border: 2px solid black;
+  }
+  
+  .tocHeader h2 {
+    color: black;
+    text-shadow: none;
+  }
+  
+  .sectionLink:hover {
+    color: inherit;
+  }
+}

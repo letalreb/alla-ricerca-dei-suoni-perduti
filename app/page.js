@@ -1,4 +1,5 @@
 import Hero from './_components/Hero';
+import VideoSection from './_components/VideoSection';
 import PropertyCard from './_components/PropertyCard';
 
 const properties = [
@@ -38,6 +39,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <VideoSection />
       <div className="container" style={{ padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
         <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2.5rem' }}>Our Properties</h2>
         <div className="grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
