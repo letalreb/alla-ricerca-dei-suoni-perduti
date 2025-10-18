@@ -43,3 +43,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# media files (ignore all files in audio folder but keep the folder)
+public/audio/*
+!public/audio/.gitkeep
