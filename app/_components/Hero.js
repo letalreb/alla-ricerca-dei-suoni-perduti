@@ -5,8 +5,8 @@ export default function Hero() {
     <div className={styles.hero}>
       <div className={styles.overlay}></div>
       <div className={styles.content}>
-        <h1>The Family Estates</h1>
-        <p>Each property with its own historical and cultural identity</p>
+        <h1>Alla Ricerca dei Suoni Perduti</h1>
+        <p>Un viaggio attraverso la storia degli strumenti musicali antichi</p>
       </div>
     </div>
   );

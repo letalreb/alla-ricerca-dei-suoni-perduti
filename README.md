@@ -1,4 +1,16 @@
+# Alla Ricerca dei Suoni Perduti
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## ⚠️ Privacy & Indexing
+
+This site is configured to **block all search engine crawlers and web spiders**:
+- ✅ `robots.txt` blocks all user agents
+- ✅ Meta tags with `noindex, nofollow, noarchive` 
+- ✅ Specific blocking for Google, Bing, Yahoo, and other major search engines
+- ✅ No sitemap generation
+
+The site is intended for private use only and will not appear in search engine results.
 
 ## Getting Started
 

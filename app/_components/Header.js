@@ -6,7 +6,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link href="/" className={styles.logo}>
-          Giulini Family Estates
+          Alla Ricerca dei Suoni Perduti
         </Link>
         <nav className={styles.navigation}>
           <Link href="/" className={styles.navLink}>Home</Link>

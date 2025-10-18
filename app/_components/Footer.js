@@ -3,7 +3,7 @@ import styles from './Footer.module.css';
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <p>&copy; 2025 Giulini Family Estates. All rights reserved.</p>
+      <p>&copy; 2025 Alla Ricerca dei Suoni Perduti. Tutti i diritti riservati.</p>
     </footer>
   );
 }
