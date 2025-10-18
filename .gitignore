@@ -26,6 +26,7 @@
 
 # temporary files and directories
 tmp/*
+public/bck/*
 
 # debug
 npm-debug.log*

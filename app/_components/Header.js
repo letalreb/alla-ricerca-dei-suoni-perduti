@@ -9,9 +9,22 @@ export default function Header() {
           Alla Ricerca dei Suoni Perduti
         </Link>
         <nav className={styles.navigation}>
-          <Link href="/" className={styles.navLink}>Home</Link>
-          <Link href="/properties" className={styles.navLink}>Properties</Link>
-          <Link href="/book" className={styles.navLink}>Book</Link>
+          <a 
+            href="https://www.villamedici-giulini.it/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className={styles.navLink}
+          >
+            Villa Medici Giulini
+          </a>
+          <a 
+            href="https://www.enteville.it" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className={styles.navLink}
+          >
+            Ente Ville Versiliesi
+          </a>
         </nav>
       </div>
     </header>

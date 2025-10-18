@@ -1,0 +1,136 @@
+.audioPlayer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #f8f6f3 0%, #fff 100%);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(139, 21, 56, 0.1);
+}
+
+.artworkContainer {
+  width: 100%;
+  aspect-ratio: 1;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f3e5e8 0%, #e8d5d9 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(139, 21, 56, 0.15);
+}
+
+.artwork {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholderArtwork {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8b1538;
+  opacity: 0.3;
+}
+
+.placeholderArtwork svg {
+  width: 100%;
+  height: 100%;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.playButton {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8b1538 0%, #6d1029 100%);
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(139, 21, 56, 0.3);
+}
+
+.playButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(139, 21, 56, 0.4);
+}
+
+.playButton:active {
+  transform: scale(0.95);
+}
+
+.playButton svg {
+  width: 28px;
+  height: 28px;
+}
+
+.timelineContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.timeline {
+  flex: 1;
+  height: 6px;
+  background: rgba(139, 21, 56, 0.15);
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline:hover {
+  background: rgba(139, 21, 56, 0.2);
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #8b1538 0%, #b71d4a 100%);
+  border-radius: 3px;
+  transition: width 0.1s linear;
+}
+
+.time {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875rem;
+  color: #8b1538;
+  font-weight: 500;
+  min-width: 40px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .audioPlayer {
+    padding: 1.5rem;
+  }
+
+  .playButton {
+    width: 50px;
+    height: 50px;
+  }
+
+  .playButton svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .time {
+    font-size: 0.75rem;
+    min-width: 35px;
+  }
+}

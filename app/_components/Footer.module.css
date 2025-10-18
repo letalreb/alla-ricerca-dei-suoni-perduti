@@ -1,7 +1,39 @@
 .footer {
-  background-color: #2c3e50;
-  color: #fff;
+  background: #2d2d2d;
+  padding: 3rem 2rem 2rem;
+  margin-top: 6rem;
+  color: #cccccc;
   text-align: center;
-  padding: 2rem;
-  margin-top: 4rem;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.link {
+  color: #cccccc;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #8b1538;
+}
+
+.separator {
+  color: #666666;
+  font-size: 0.9rem;
+}
+
+.copyright {
+  color: #999999;
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
+  margin: 0;
 }

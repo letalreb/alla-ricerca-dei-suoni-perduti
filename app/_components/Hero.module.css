@@ -17,10 +17,26 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(45, 45, 45, 0.5);
 }
 
 .content {
   position: relative;
   z-index: 1;
+  padding: 2rem;
+}
+
+.content h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.content p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
 }

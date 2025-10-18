@@ -5,7 +5,7 @@ import './globals.css';
 
 export const metadata = {
   title: 'Alla Ricerca dei Suoni Perduti',
-  description: 'Un viaggio attraverso la storia e la musica, alla scoperta degli strumenti musicali antichi e del patrimonio culturale della famiglia Giulini.',
+  description: 'Un viaggio attraverso la storia degli strumenti musicali antichi',
   robots: {
     index: false,
     follow: false,
@@ -25,6 +25,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="it">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Lato:wght@300;400;500;600&display=swap" rel="stylesheet" />
         <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
         <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
         <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />

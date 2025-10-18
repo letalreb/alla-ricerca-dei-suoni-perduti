@@ -6,9 +6,9 @@ export default function VideoSection() {
       <div className={styles.container}>
         <h2 className={styles.title}>Villa Medici Giulini</h2>
         <p className={styles.description}>
-          Discover the enchanting beauty and rich history of Villa Medici Giulini, 
-          where centuries of musical heritage come alive through stunning architecture 
-          and timeless elegance.
+          Un viaggio attraverso la storia degli strumenti musicali antichi, 
+          dove secoli di patrimonio musicale prendono vita attraverso 
+          un'architettura mozzafiato ed eleganza senza tempo.
         </p>
         <div className={styles.videoWrapper}>
           <video 
@@ -24,8 +24,8 @@ export default function VideoSection() {
             <track
               kind="captions"
               src="/media/captions.vtt"
-              srcLang="en"
-              label="English captions"
+              srcLang="it"
+              label="Sottotitoli italiani"
               default
             />
             Your browser does not support the video tag.
