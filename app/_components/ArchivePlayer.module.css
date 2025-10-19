@@ -1,0 +1,115 @@
+.playerContainer {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: var(--bordox);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(139, 21, 56, 0.2);
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #8b1538 0%, #6d1029 100%);
+  color: white;
+  z-index: 10;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid var(--oro);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.placeholder {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(139, 21, 56, 0.1) 0%, rgba(109, 16, 41, 0.1) 100%);
+  border: 2px dashed var(--bordox);
+  border-radius: 8px;
+  color: var(--bordox);
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.archiveLink {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 1rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.playerContainer:hover .archiveLink {
+  opacity: 1;
+}
+
+.archiveLink a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(139, 21, 56, 0.9);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.archiveLink a:hover {
+  background: var(--bordox);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 21, 56, 0.4);
+}
+
+@media (max-width: 768px) {
+  .playerContainer {
+    height: 300px;
+  }
+
+  .placeholder {
+    height: 300px;
+  }
+
+  .archiveLink {
+    opacity: 1;
+  }
+}
