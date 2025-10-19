@@ -13,73 +13,50 @@
 require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
+const { execSync, spawnSync } = require('child_process');
 
 // Configurazione
 const VIDEO_DIR = path.join(__dirname, '../public/bck');
 const OUTPUT_FILE = path.join(__dirname, '../archive-mappings.json');
+const INSTRUMENTS_FILE = path.join(__dirname, '../app/data/instruments.js');
 const COLLECTION = 'opensource_movies'; // Collezione pubblica per video culturali
 
 // Email e password da .env
 const EMAIL = process.env.ARCHIVE_EMAIL;
 const PASSWORD = process.env.ARCHIVE_PASSWORD;
 
-// Mapping strumento ID -> nome file
-const instrumentFiles = [
-  { id: 1, file: '01 Cembalo cosiddetto "Ottoboni".mp4' },
-  { id: 2, file: '02 Arpicordo Baptista Carenonus.mp4' },
-  { id: 3, file: '03 Fortepiano Anton Walter, Vienna 1790 ca.mp4' },
-  { id: 4, file: '04 Fortepiano Anton Walter, Vienna, 1800 ca.mp4' },
-  { id: 5, file: '05 Fortepiano Conrad Graf, Vienna, 1826.mp4' },
-  { id: 6, file: '06 Fortepiano - Hieronimus Bassi, Augsburg,1785.mp4' },
-  { id: 7, file: '07 Fortepiano Sebastian Erard, Parigi, 1801.mp4' },
-  { id: 8, file: '08 Fortepiano John Broadwood & Son, Londra, 1806.mp4' },
-  { id: 9, file: '09 Fortepiano Ignace-Joseph Pleyel, Parigi, 1807.mp4' },
-  { id: 10, file: '10 Fortepiano Conrad Graf.mp4' },
-  { id: 11, file: '11 Fortepiano Conrad Graf, Vienna, 1835.mp4' },
-  { id: 13, file: '13 Pianoforte verticale Carl Diehl, Kassel, 1838-1840.mp4' },
-  { id: 14, file: '14 Pianoforte Johann Baptist Streicher, Vienna, 1846.mp4' },
-  { id: 15, file: '15 Pianoforte verticale a giraffa Johann Evangelist Schmid, Salisburgo, 1825.mp4' },
-  { id: 16, file: '16 Pianoforte verticale a piramide Christian Ernst Friderici, Gera, 1745.mp4' },
-  { id: 17, file: '17 Claviciterio Michele Todini, Roma, 1675.mp4' },
-  { id: 18, file: '18 Clavicordo Italia meridionale, 1700.mp4' },
-  { id: 19, file: '19 Pianoforte verticale John Broadwood & Sons, Londra, 1815.mp4' },
-  { id: 20, file: '20 Clavicembalo Carlo Grimaldi, Messina, 1697.mp4' },
-  { id: 21, file: '21 Spinettone anonimo, Italia, 1600 ca.mp4' },
-  { id: 22, file: '22 Clavicembalo Giovanni Antonio Baffo, Venezia, 1581.mp4' },
-  { id: 23, file: '23 Clavicembalo Johann Daniel Dulcken, Anversa, 1745.mp4' },
-  { id: 24, file: '24 Clavicembalo Pascal Taskin, Parigi, 1786.mp4' },
-  { id: 25, file: '25 Clavicembalo Jakob e Abraham Kirckman, Londra, 1789.mp4' },
-  { id: 26, file: '26 Fortepiano da boudoir (con scatola da cucito).mp4' },
-  { id: 28, file: '28 Pianoforte "Giulini" Erard, Parigi, 1842.mp4' },
-  { id: 29, file: '29 Pianoforte Steinway & Sons, New York, 1875.mp4' },
-  { id: 30, file: '30 Pianoforte a coda Steinway & Sons, New York, 1888.mp4' },
-  { id: 32, file: '32 Pianoforte Bechstein, Berlino, 1879.mp4' },
-  { id: 33, file: '33 Pianoforte E. BÉTSY (padre).mp4' },
-  { id: 34, file: '34 Pianoforte a coda Boisselot & Fils.mp4' },
-  { id: 35, file: '35 Pianoforte verticale (Pianino) Pleyel Paris, 1854.mp4' },
-  { id: 36, file: '36 Fortepiano o Pianoforte verticale a tavolo Ignace Pleyel, Parigi, 1815 ca.mp4' },
-  { id: 37, file: '37 Fortepiano o Pianoforte verticale a tavolo G. F. Wachtl & Bleyer, Vienna, 1815 ca.mp4' },
-  { id: 38, file: '38 Pianoforte Pape con corde oblique, Parigi, 1834.mp4' },
-  { id: 39, file: '39 Pianoforte verticale Jean Henri Pape, Parigi, 1840.mp4' },
-  { id: 40, file: '40 Pianoforte verticale (pianino) Pleyel, Parigi, 1870.mp4' },
-  { id: 41, file: '41 Arpa doppio movimento Sébastien Erard, Parigi, 1811.mp4' },
-  { id: 42, file: '42 Arpa doppio movimento Sébastien Erard, Londra, 1819.mp4' },
-  { id: 45, file: '45 Arpa doppio movimento Sébastien Erard, Parigi, 1836.mp4' },
-  { id: 46, file: '46 Arpa doppio movimento Sébastien Erard, Londra, 1838.mp4' },
-  { id: 47, file: '47 Arpa doppio movimento Sébastien Erard, Londra, 1838 - II.mp4' },
-  { id: 48, file: '48 Arpa doppio movimento Sébastien Erard, Parigi, 1840.mp4' },
-  { id: 49, file: '49 Arpa doppio movimento Sébastien Erard, Parigi, 1849.mp4' },
-  { id: 50, file: '50 Arpa doppio movimento Sébastien Erard, Londra, 1851.mp4' },
-  { id: 53, file: '53 Arpa doppio movimento Sébastien Erard, Londra, 1827.mp4' },
-  { id: 56, file: '56 Mandolino Lombardia 1800.mp4' },
-  { id: 57, file: '57 Mandolino milanese Famiglia Monzino, Milano, seconda metà del secolo XIX.mp4' },
-  { id: 61, file: '61 Chitarra Gio. Batta Fabricatore, Napoli, 1805.mp4' },
-  { id: 62, file: '62 Chitarra Luigi Mozzani, Cento (Ferrara), 1916.mp4' },
-  { id: 63, file: '63 Organetto da slitta o da processione - Barrel organ.mp4' },
-  { id: 64, file: '64 Organo domestico Giuseppe Colombo.mp4' },
-  { id: 65, file: '65 Armonium Jacob Alexandre, Parigi, 1860 ca.mp4' },
-];
+// Leggi instruments.js e estrai gli strumenti con audioFile
+function loadInstrumentsWithAudio() {
+  try {
+    // Leggi il file instruments.js
+    const instrumentsContent = fs.readFileSync(INSTRUMENTS_FILE, 'utf8');
+    
+    // Estrai l'array degli strumenti usando regex
+    const arrayMatch = instrumentsContent.match(/export const instruments = \[([\s\S]*?)\];/);
+    if (!arrayMatch) {
+      throw new Error('Impossibile trovare l\'array instruments nel file');
+    }
+    
+    // Usa eval per parsare l'array (sicuro perché è il nostro file)
+    const instruments = eval(`[${arrayMatch[1]}]`);
+    
+    // Filtra solo gli strumenti con audioFile
+    return instruments
+      .filter(inst => inst.audioFile)
+      .map(inst => ({
+        id: inst.id,
+        file: inst.audioFile
+      }));
+  } catch (error) {
+    console.error('❌ Errore nel caricamento di instruments.js:', error.message);
+    console.log('\nVerifica che il file app/data/instruments.js esista e sia valido.');
+    process.exit(1);
+  }
+}
+
+// Carica gli strumenti con file audio
+const instrumentFiles = loadInstrumentsWithAudio();
+console.log(`📚 Caricati ${instrumentFiles.length} strumenti con file audio da instruments.js\n`);
 
 // Funzione per creare uno slug valido per Internet Archive
 function createIdentifier(id, filename) {
@@ -93,14 +70,27 @@ function createIdentifier(id, filename) {
     .replace(/[òóôõö]/g, 'o')
     .replace(/[ùúûü]/g, 'u')
     .replace(/[^a-z0-9]+/g, '-') // Sostituisci caratteri speciali con -
-    .replace(/^-+|-+$/g, '') // Rimuovi - all'inizio e fine
-    .substring(0, 80); // Limita lunghezza
+    .replace(/^-+|-+$/g, ''); // Rimuovi - all'inizio e fine
   
-  return `villa-medici-giulini-${String(id).padStart(2, '0')}-${name}`;
+  const prefix = `vmg-${String(id).padStart(2, '0')}`;
+  const maxNameLength = 80 - prefix.length - 1; // -1 per il trattino
+  const truncatedName = name.substring(0, maxNameLength);
+  
+  return `${prefix}-${truncatedName}`;
 }
 
-// Funzione per caricare un singolo video usando ia CLI
-function uploadVideo(instrument) {
+// Funzione per verificare se un video è già stato caricato su Archive
+function checkIfExists(identifier) {
+  try {
+    execSync(`ia list "${identifier}"`, { stdio: 'ignore' });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+// Funzione per caricare un singolo video usando ia CLI con retry
+async function uploadVideo(instrument, maxRetries = 3) {
   const filePath = path.join(VIDEO_DIR, instrument.file);
   
   // Verifica che il file esista
@@ -117,30 +107,9 @@ function uploadVideo(instrument) {
   console.log(`   Dimensione: ${(fileSize / 1024 / 1024).toFixed(2)} MB`);
   console.log(`   Identifier: ${identifier}`);
 
-  try {
-    // Costruisci il comando ia upload
-    const metadata = [
-      `--metadata="title:${title}"`,
-      `--metadata="creator:Villa Medici Giulini"`,
-      `--metadata="description:Strumento musicale storico della collezione Villa Medici Giulini, Briosco (MB), Italia. Parte del progetto 'Alla ricerca dei suoni perduti'."`,
-      `--metadata="subject:musical instruments"`,
-      `--metadata="subject:historical instruments"`,
-      `--metadata="subject:italian heritage"`,
-      `--metadata="subject:villa medici giulini"`,
-      `--metadata="mediatype:movies"`,
-      `--metadata="collection:${COLLECTION}"`,
-      `--metadata="language:ita"`,
-      `--metadata="licenseurl:https://creativecommons.org/licenses/by-nc-sa/4.0/"`,
-    ].join(' ');
-
-    const command = `ia upload "${identifier}" "${filePath}" ${metadata}`;
-    
-    console.log('   Caricamento in corso...');
-    execSync(command, { stdio: 'inherit' });
-
-    console.log(`✅ Completato: ${identifier}`);
-    console.log(`   URL: https://archive.org/details/${identifier}`);
-
+  // Controlla se esiste già
+  if (checkIfExists(identifier)) {
+    console.log(`✅ Già presente su Archive.org: ${identifier}`);
     return {
       instrumentId: instrument.id,
       archiveId: identifier,
@@ -148,10 +117,95 @@ function uploadVideo(instrument) {
       embedUrl: `https://archive.org/embed/${identifier}`,
       fileName: instrument.file
     };
-  } catch (error) {
-    console.error(`❌ Errore durante il caricamento di ${instrument.file}:`, error.message);
-    return null;
   }
+
+  // Costruisci gli argomenti per ia upload
+  const args = [
+    'upload',
+    identifier,
+    filePath,
+    `--metadata=title:${title}`,
+    '--metadata=creator:Villa Medici Giulini',
+    '--metadata=description:Strumento musicale storico della collezione Villa Medici Giulini, Briosco (MB), Italia. Parte del progetto \'Alla ricerca dei suoni perduti\'.',
+    '--metadata=subject:musical instruments',
+    '--metadata=subject:historical instruments',
+    '--metadata=subject:italian heritage',
+    '--metadata=subject:villa medici giulini',
+    '--metadata=mediatype:movies',
+    `--metadata=collection:${COLLECTION}`,
+    '--metadata=language:ita',
+    '--metadata=licenseurl:https://creativecommons.org/licenses/by-nc-sa/4.0/',
+    '--retries',
+    '5',
+    '--no-derive'
+  ];
+  
+  // Prova con retry
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      console.log(`   Caricamento in corso... (tentativo ${attempt}/${maxRetries})`);
+      
+      // Usa timeout più lungo per file grandi
+      const timeoutMinutes = Math.ceil(fileSize / (1024 * 1024 * 2)); // 1 minuto ogni 2MB
+      const timeoutSeconds = Math.max(600, timeoutMinutes * 60); // Minimo 10 minuti
+      
+      const result = spawnSync('ia', args, { 
+        stdio: 'inherit',
+        timeout: timeoutSeconds * 1000,
+        env: { ...process.env, IA_TIMEOUT: '300' } // Timeout IA in secondi
+      });
+
+      if (result.status !== 0 && result.status !== null) {
+        throw new Error(`Upload failed with exit code ${result.status}`);
+      }
+
+      console.log(`✅ Completato: ${identifier}`);
+      console.log(`   URL: https://archive.org/details/${identifier}`);
+
+      return {
+        instrumentId: instrument.id,
+        archiveId: identifier,
+        archiveUrl: `https://archive.org/details/${identifier}`,
+        embedUrl: `https://archive.org/embed/${identifier}`,
+        fileName: instrument.file
+      };
+    } catch (error) {
+      // Se il video è al 100% ma timeout alla fine, controlla se esiste
+      if (error.message.includes('timeout') || error.message.includes('ReadTimeout')) {
+        console.log(`⏱️  Timeout durante finalizzazione, verifico se caricamento completato...`);
+        
+        // Aspetta 30 secondi che Archive.org processi
+        await new Promise(resolve => setTimeout(resolve, 30000));
+        
+        // Controlla se il video è ora disponibile
+        if (checkIfExists(identifier)) {
+          console.log(`✅ Video verificato su Archive.org: ${identifier}`);
+          console.log(`   URL: https://archive.org/details/${identifier}`);
+          
+          return {
+            instrumentId: instrument.id,
+            archiveId: identifier,
+            archiveUrl: `https://archive.org/details/${identifier}`,
+            embedUrl: `https://archive.org/embed/${identifier}`,
+            fileName: instrument.file
+          };
+        }
+      }
+      
+      if (attempt < maxRetries) {
+        const waitTime = attempt * 15; // 15s, 30s, 45s
+        console.log(`⚠️  Errore, riprovo tra ${waitTime} secondi...`);
+        await new Promise(resolve => setTimeout(resolve, waitTime * 1000));
+      } else {
+        console.error(`❌ Errore finale dopo ${maxRetries} tentativi: ${instrument.file}`);
+        console.log(`   Il file potrebbe essere stato caricato, verifica manualmente:`);
+        console.log(`   https://archive.org/details/${identifier}`);
+        return null;
+      }
+    }
+  }
+
+  return null;
 }
 
 // Funzione per verificare se ia CLI è installato
@@ -203,15 +257,47 @@ async function main() {
   // Configura credenziali
   configureIaCli();
 
-  const results = [];
-  const errors = [];
+  // Carica risultati precedenti se esistono (per resume)
+  let results = [];
+  let errors = [];
+  
+  if (fs.existsSync(OUTPUT_FILE)) {
+    try {
+      const previousData = JSON.parse(fs.readFileSync(OUTPUT_FILE, 'utf8'));
+      results = previousData.mappings || [];
+      errors = previousData.errors || [];
+      console.log(`📂 Trovato file precedente con ${results.length} video già caricati`);
+      console.log(`   Riprendo da dove interrotto...\n`);
+    } catch (error) {
+      console.log('⚠️  File precedente non valido, ricomincio da capo\n');
+    }
+  }
+
+  // IDs già caricati con successo
+  const uploadedIds = new Set(results.map(r => r.instrumentId));
 
   // Carica i video uno alla volta
   for (const instrument of instrumentFiles) {
-    const result = uploadVideo(instrument);
+    // Salta se già caricato
+    if (uploadedIds.has(instrument.id)) {
+      console.log(`⏭️  Saltato ${instrument.id}: ${instrument.file} (già caricato)`);
+      continue;
+    }
+
+    const result = await uploadVideo(instrument);
     
     if (result) {
       results.push(result);
+      // Salva progressi dopo ogni upload riuscito
+      const progressOutput = {
+        uploadDate: new Date().toISOString(),
+        totalVideos: instrumentFiles.length,
+        successfulUploads: results.length,
+        failedUploads: errors.length,
+        mappings: results,
+        errors: errors
+      };
+      fs.writeFileSync(OUTPUT_FILE, JSON.stringify(progressOutput, null, 2));
     } else {
       errors.push({
         instrumentId: instrument.id,
@@ -219,10 +305,10 @@ async function main() {
       });
     }
     
-    // Pausa di 3 secondi tra un upload e l'altro per evitare rate limiting
+    // Pausa di 5 secondi tra un upload e l'altro per evitare rate limiting
     if (instrument !== instrumentFiles[instrumentFiles.length - 1]) {
-      console.log('⏱️  Pausa 3 secondi...');
-      await new Promise(resolve => setTimeout(resolve, 3000));
+      console.log('⏱️  Pausa 5 secondi...');
+      await new Promise(resolve => setTimeout(resolve, 5000));
     }
   }
 

@@ -1,66 +1,36 @@
 /* eslint-disable react/prop-types */
-'use client';
-
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 import styles from './InstrumentCard.module.css';
 
 export default function InstrumentCard({ instrument }) {
-  const videoRef = useRef(null);
-  const [thumbnail, setThumbnail] = useState(null);
+  // Calcola il path della thumbnail
+  const getThumbnailPath = () => {
+    if (!instrument.audioFile) return null;
+    
+    // Sostituisci estensione video con .jpg
+    const thumbnailName = instrument.audioFile.replace(/\.(mp4|mpg|mp3)$/i, '.jpg');
+    return `/images/thumbnails/${thumbnailName}`;
+  };
 
-  useEffect(() => {
-    if (!instrument.audioFile) return;
-
-    const video = videoRef.current;
-    if (!video) return;
-
-    const handleLoadedData = () => {
-      // Vai a 1 secondo nel video per ottenere un frame migliore
-      video.currentTime = 1;
-    };
-
-    const handleSeeked = () => {
-      try {
-        const canvas = document.createElement('canvas');
-        canvas.width = video.videoWidth || 640;
-        canvas.height = video.videoHeight || 480;
-        const ctx = canvas.getContext('2d');
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const dataUrl = canvas.toDataURL('image/jpeg');
-        setThumbnail(dataUrl);
-      } catch (error) {
-        console.error('Errore nel creare thumbnail:', error);
-      }
-    };
-
-    video.addEventListener('loadeddata', handleLoadedData);
-    video.addEventListener('seeked', handleSeeked);
-
-    return () => {
-      video.removeEventListener('loadeddata', handleLoadedData);
-      video.removeEventListener('seeked', handleSeeked);
-    };
-  }, [instrument.audioFile]);
-
+  const thumbnailPath = getThumbnailPath();
   const videoPath = instrument.audioFile ? `/audio/${instrument.audioFile}` : null;
   const isAudio = videoPath?.endsWith('.mp3');
 
   return (
     <Link href={`/strumenti/${instrument.id}`} className={styles.card}>
       <div className={styles.imageWrapper}>
-        {videoPath && !isAudio && (
-          <video
-            ref={videoRef}
-            src={videoPath}
-            className={styles.hiddenVideo}
-            muted
-            playsInline
-            preload="metadata"
+        {thumbnailPath && !isAudio ? (
+          <Image 
+            src={thumbnailPath}
+            alt={instrument.name}
+            width={800}
+            height={600}
+            className={styles.thumbnail}
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWEREiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
           />
-        )}
-        {thumbnail ? (
-          <img src={thumbnail} alt={instrument.name} className={styles.thumbnail} />
         ) : (
           <div className={styles.placeholder}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
