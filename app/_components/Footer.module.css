@@ -4,36 +4,14 @@
   margin-top: 6rem;
   color: #cccccc;
   text-align: center;
-}
-
-.links {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1.5rem;
-}
-
-.link {
-  color: #cccccc;
-  transition: color 0.3s ease;
-  font-size: 0.95rem;
-  letter-spacing: 0.3px;
-  text-decoration: none;
-}
-
-.link:hover {
-  color: #8b1538;
-}
-
-.separator {
-  color: #666666;
-  font-size: 0.9rem;
+  position: relative;
+  z-index: 1;
 }
 
 .copyright {
-  color: #999999;
-  font-size: 0.85rem;
+  color: #cccccc;
+  font-size: 0.9rem;
   letter-spacing: 0.3px;
   margin: 0;
+  font-weight: 400;
 }

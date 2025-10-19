@@ -2,37 +2,58 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 1.5rem 2rem 3rem;
-  background: #ffffff;
+  position: relative;
+  z-index: 1;
 }
 
 .header {
   text-align: center;
   margin-bottom: 3.5rem;
-  padding: 1rem 0 2rem;
-  border-bottom: 1px solid #e8e8e8;
+  padding: 4rem 2rem;
+  border-bottom: 1px solid rgba(232, 232, 232, 0.3);
+  border-radius: 12px;
+  background: transparent;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .title {
   font-size: 2.5rem;
-  color: #2d2d2d;
+  color: #ffffff;
   margin: 0 0 1rem 0;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.5px;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.8);
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .subtitle {
   font-size: 1.15rem;
-  color: #666666;
+  color: rgba(255, 255, 255, 0.98);
   margin: 0 0 0.5rem 0;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.3px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.8);
+  animation: fadeInUp 0.8s ease-out 0.1s backwards;
 }
 
 .count {
   font-size: 0.95rem;
-  color: #999999;
+  color: rgba(255, 255, 255, 0.95);
   margin: 0;
   font-weight: 400;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.8);
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .grid {
@@ -57,7 +78,9 @@
 
   .header {
     margin-bottom: 2.5rem;
-    padding: 1.5rem 0;
+    padding: 3rem 1.5rem;
+    border-radius: 8px;
+    background-attachment: scroll; /* Disabilita parallax su mobile */
   }
 
   .title {
@@ -75,6 +98,10 @@
 }
 
 @media (max-width: 480px) {
+  .header {
+    padding: 2.5rem 1rem;
+  }
+  
   .title {
     font-size: 1.75rem;
   }

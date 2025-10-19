@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F4E4A6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="woodGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#654321;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Ornamental frame -->
+  <g opacity="0.15">
+    <rect x="5" y="5" width="390" height="110" rx="8" fill="none" stroke="url(#goldGrad)" stroke-width="1"/>
+    <rect x="10" y="10" width="380" height="100" rx="6" fill="none" stroke="url(#goldGrad)" stroke-width="0.5"/>
+  </g>
+  
+  <!-- Lyre/Harp icon on the left -->
+  <g transform="translate(50, 60)">
+    <!-- Base -->
+    <ellipse cx="0" cy="25" rx="18" ry="5" fill="url(#woodGrad)" opacity="0.9"/>
+    
+    <!-- Left arm -->
+    <path d="M -14 25 Q -18 5 -12 -25" stroke="url(#woodGrad)" stroke-width="4" fill="none" stroke-linecap="round"/>
+    
+    <!-- Right arm -->
+    <path d="M 14 25 Q 18 5 12 -25" stroke="url(#woodGrad)" stroke-width="4" fill="none" stroke-linecap="round"/>
+    
+    <!-- Top bar -->
+    <line x1="-12" y1="-25" x2="12" y2="-25" stroke="url(#woodGrad)" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Strings -->
+    <line x1="-9" y1="-23" x2="-8" y2="23" stroke="url(#goldGrad)" stroke-width="1" opacity="0.8"/>
+    <line x1="-3" y1="-23" x2="-2" y2="23" stroke="url(#goldGrad)" stroke-width="1" opacity="0.8"/>
+    <line x1="3" y1="-23" x2="3" y2="23" stroke="url(#goldGrad)" stroke-width="1" opacity="0.8"/>
+    <line x1="9" y1="-23" x2="8" y2="23" stroke="url(#goldGrad)" stroke-width="1" opacity="0.8"/>
+    
+    <!-- Decorative circles -->
+    <circle cx="-12" cy="-25" r="2.5" fill="url(#goldGrad)"/>
+    <circle cx="12" cy="-25" r="2.5" fill="url(#goldGrad)"/>
+  </g>
+  
+  <!-- Title text -->
+  <text x="90" y="48" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="500" fill="#ffffff" letter-spacing="1">
+    Alla Ricerca dei Suoni Perduti
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="90" y="72" font-family="'Lato', sans-serif" font-size="12" font-weight="300" fill="rgba(255,255,255,0.85)" letter-spacing="1.5" font-style="italic">
+    LA COLLEZIONE DI STRUMENTI MUSICALI
+  </text>
+  
+  <!-- Decorative musical notes -->
+  <g opacity="0.6" fill="url(#goldGrad)">
+    <!-- Note 1 -->
+    <circle cx="370" cy="30" r="4"/>
+    <rect x="373" y="30" width="1.5" height="15"/>
+    <path d="M 374.5 30 Q 378 28 380 30" fill="none" stroke="url(#goldGrad)" stroke-width="1.5"/>
+    
+    <!-- Note 2 -->
+    <circle cx="365" cy="85" r="3.5"/>
+    <rect x="368" y="72" width="1.5" height="13"/>
+  </g>
+  
+  <!-- Decorative divider -->
+  <line x1="90" y1="80" x2="355" y2="80" stroke="url(#goldGrad)" stroke-width="0.5" opacity="0.4"/>
+  
+  <!-- Ornamental details -->
+  <g opacity="0.3" fill="url(#goldGrad)">
+    <circle cx="90" cy="80" r="1.5"/>
+    <circle cx="355" cy="80" r="1.5"/>
+  </g>
+</svg>

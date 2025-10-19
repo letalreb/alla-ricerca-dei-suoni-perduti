@@ -6,6 +6,10 @@ import './globals.css';
 export const metadata = {
   title: 'Alla Ricerca dei Suoni Perduti',
   description: 'Un viaggio attraverso la storia degli strumenti musicali antichi',
+  icons: {
+    icon: '/favicon.svg',
+    apple: '/apple-touch-icon.svg',
+  },
   robots: {
     index: false,
     follow: false,
