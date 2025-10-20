@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import Link from 'next/link';
-import instruments from '../../data/instruments';
+import { instruments } from '../../data/instruments';
 import ArchivePlayer from '../../_components/ArchivePlayer';
 import styles from './page.module.css';
 

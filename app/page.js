@@ -1,5 +1,5 @@
 import InstrumentCard from './_components/InstrumentCard';
-import instruments from './data/instruments';
+import { instruments } from './data/instruments';
 import styles from './page.module.css';
 
 export default function HomePage() {
