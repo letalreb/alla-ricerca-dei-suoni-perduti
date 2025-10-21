@@ -30,6 +30,18 @@
   letter-spacing: 0.5px;
   display: block;
   margin-bottom: 0.3rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo:hover {
+  color: #d4af37;
+  transform: scale(1.05);
+  text-shadow: 
+    0 0 20px rgba(212, 175, 55, 0.6),
+    0 0 40px rgba(212, 175, 55, 0.4),
+    0 4px 8px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
 }
 
 .subtitle {
