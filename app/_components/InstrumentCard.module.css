@@ -49,6 +49,26 @@
   transform: scale(1.05);
 }
 
+/* Zoom out specifico per strumento 48 */
+.card:nth-child(48) .thumbnail {
+  object-fit: contain;
+}
+
+/* Sfondo nero specifico per strumento 48 */
+.card:nth-child(48) .imageWrapper {
+  background: #000000 !important;
+}
+
+/* Zoom out specifico per strumento 51 */
+.card:nth-child(51) .thumbnail {
+  object-fit: contain;
+}
+
+/* Sfondo nero specifico per strumento 51 */
+.card:nth-child(51) .imageWrapper {
+  background: #000000 !important;
+}
+
 .placeholder {
   position: absolute;
   top: 0;

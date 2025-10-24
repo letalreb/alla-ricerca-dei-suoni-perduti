@@ -10,6 +10,10 @@ export default function InstrumentCard({ instrument }) {
   
   // Mappatura dei nomi file per le thumbnail degli strumenti senza audio
   const thumbnailMapping = {
+    27: '27 Fortepiano a tavolo Johann Christoph Zumpe, Londra, 1780.jpg',
+    31: '31 Fortepiano a tavolo Italia, seconda metà del secolo XVIII.jpg',
+    51: '51 Arpa Sébastien Erard, Londra, 1821.jpg',
+    59: '59 Mandolino, Napoli, XX secolo.jpg',
     66: '66 Arpa a pedali a movimento semplice Érard, Parigi, 1808, numero di serie N 123 BERNASCONI.jpg',
     67: '67 Arpa a pedali a doppio movimento Érard, Parigi, ottobre 1919, numero di serie N 4114 DALL\'ARA.jpg',
     68: '68 Arpa a pedali a doppio movimento Érard _Bassi_, Parigi, 1902, numero di serie N 4584.jpg',
@@ -41,13 +45,14 @@ export default function InstrumentCard({ instrument }) {
   
   // Calcola il path della thumbnail
   const getThumbnailPath = () => {
+    // Prima controlla se c'è una mappatura specifica
+    if (thumbnailMapping[instrument.id]) {
+      return `/images/thumbnails/${thumbnailMapping[instrument.id]}`;
+    }
+    // Altrimenti usa il nome del file audio
     if (instrument.audioFile) {
-      // Se c'è audioFile, usa quello per trovare la thumbnail
       const thumbnailName = instrument.audioFile.replace(/\.(mp4|mpg|mp3)$/i, '.jpg');
       return `/images/thumbnails/${thumbnailName}`;
-    } else if (thumbnailMapping[instrument.id]) {
-      // Se non c'è audioFile, usa la mappatura
-      return `/images/thumbnails/${thumbnailMapping[instrument.id]}`;
     }
     return null;
   };
