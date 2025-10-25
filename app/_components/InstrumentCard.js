@@ -10,6 +10,9 @@ export default function InstrumentCard({ instrument }) {
   
   // Mappatura dei nomi file per le thumbnail degli strumenti senza audio
   const thumbnailMapping = {
+    16: '16 Fortepiano a coda Conrad Graf, Vienna, ca. 1834.jpg',
+    17: '17 Fortepiano a coda Conrad Graf, Vienna, ca. 1834.jpg',
+    20: '20 Fortepiano a coda Maximilian Schott, Vienna, ca. 1840.jpg',
     27: '27 Fortepiano a tavolo Johann Christoph Zumpe, Londra, 1780.jpg',
     31: '31 Fortepiano a tavolo Italia, seconda metà del secolo XVIII.jpg',
     51: '51 Arpa Sébastien Erard, Londra, 1821.jpg',
