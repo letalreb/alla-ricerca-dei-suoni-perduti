@@ -27,25 +27,16 @@ export default function ArchivePlayer({ archiveId, embedUrl, title }) {
         </div>
       )}
       <iframe
-        src={`${embedUrl}?autoplay=1`}
+        src={embedUrl}
         width="100%"
         height="100%"
         frameBorder="0"
-        allow="autoplay; fullscreen"
+        allow="fullscreen"
         allowFullScreen
         title={title || 'Video strumento musicale'}
         onLoad={() => setIsLoading(false)}
         className={styles.iframe}
       />
-      <div className={styles.archiveLink}>
-        <a 
-          href={`https://archive.org/details/${archiveId}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          📚 Vedi su Internet Archive
-        </a>
-      </div>
     </div>
   );
 }
