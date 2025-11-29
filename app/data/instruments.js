@@ -79,7 +79,7 @@ export const instruments = [
   { id: 75, name: "Pianoforte a coda \"Bigatti\" Ernest Kaps, n.10188, Dresden, ca. 1885" },
   { id: 76, name: "Pianoforte mezza coda aliquot Julius Blüthner, n.137200, Leipzig, 1971" },
   { id: 77, name: "Pianoforte a coda \"Montorfano\" Burger & Jacobi, n.28543, Madretsch, Bienne, 1931" },
-  { id: 78, name: "Pianoforte a coda Pleyel, n.173871, Parigi, ca. 1923" },
+  { id: 78, name: "Pianoforte a coda Pleyel, n.173871, Parigi, ca. 1923", audioFile: "78_Pleyel Forte.mp4", archiveId: "villa-medici-giulini-78-pianoforte-a-coda-pleyel-n-173871-parigi-ca-1923", embedUrl: "https://archive.org/embed/villa-medici-giulini-78-pianoforte-a-coda-pleyel-n-173871-parigi-ca-1923" },
   { id: 79, name: "Pianoforte a coda \"Ravasio\" Augusto Tallone, n.2136/c.XXXI/91, Milano, 08-03-1960" },
   { id: 80, name: "Pianoforte mezza coda Modello O-180, Steinway & Sons, n. 238617, Amburgo, 1899" },
   { id: 81, name: "Pianoforte quarto di coda Steinway & Sons, Modello S-155 n.299308, New York-Hamburg, 1926" },
