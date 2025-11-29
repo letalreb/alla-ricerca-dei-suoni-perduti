@@ -27,7 +27,7 @@ export default function ArchivePlayer({ archiveId, embedUrl, title }) {
         </div>
       )}
       <iframe
-        src={embedUrl}
+        src={`${embedUrl}?showInfo=0`}
         width="100%"
         height="100%"
         frameBorder="0"
