@@ -89,7 +89,7 @@ export const instruments = [
   { id: 85, name: "Pianoforte mezza coda Yamaha G2 E 1853242, Hamamatsu, 1974" },
   { id: 86, name: "Harmonium Kaslier E ca., Parigi, ca. 1930" },
   { id: 87, name: "Le Guide Chant Kaslier E ca., Parigi, ca. 1930" },
-  { id: 88, name: "Violino Giuseppe Pedrazzini (1879-1957), Milano, 1920" },
+  { id: 88, name: "Violino Giuseppe Pedrazzini (1879-1957), Milano, 1920", audioFile: "88_EUGENIO_VIOLINO_migliorato.mp4", archiveId: "villa-medici-giulini-88-violino-giuseppe-pedrazzini-milano-1920", embedUrl: "https://archive.org/embed/villa-medici-giulini-88-violino-giuseppe-pedrazzini-milano-1920" },
   { id: 89, name: "Violino da bambino, metà del secolo XX" },
   { id: 90, name: "Violino Maidstone, inizio del secolo XX" },
   { id: 91, name: "Violino Stefano Caponnetto, Catania, primo quarto del secolo XX" },
