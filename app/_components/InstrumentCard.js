@@ -5,7 +5,7 @@ import styles from './InstrumentCard.module.css';
 
 export default function InstrumentCard({ instrument }) {
   // IDs degli strumenti non in grado di suonare
-  const notPlayableIds = [27, 31, 73, 89];
+  const notPlayableIds = [];
   const isNotPlayable = notPlayableIds.includes(instrument.id);
   
   // Mappatura dei nomi file per le thumbnail degli strumenti senza audio
