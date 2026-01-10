@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import Header from './_components/Header';
 import Footer from './_components/Footer';
+import { LanguageProvider } from './context/LanguageContext';
 import './globals.css';
 
 export const metadata = {
@@ -37,9 +38,11 @@ export default function RootLayout({ children }) {
         <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
       </head>
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <LanguageProvider>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );
