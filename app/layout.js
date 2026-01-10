@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
         <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
         <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
       </head>
-      <body>
+      <body suppressHydrationWarning={true}>
         <Header />
         <main>{children}</main>
         <Footer />
