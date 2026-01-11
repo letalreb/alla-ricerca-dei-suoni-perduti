@@ -1,0 +1,587 @@
+{
+  "1": {
+    "id": 1,
+    "originalFile": "01 Cembalo G.N. BOCCALARI, Napoli, 1679.mp4",
+    "videoGuid": "521b33ae-53ec-4163-8f7f-badbb767d0c0",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/521b33ae-53ec-4163-8f7f-badbb767d0c0",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/521b33ae-53ec-4163-8f7f-badbb767d0c0",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:51:08.316Z"
+  },
+  "2": {
+    "id": 2,
+    "originalFile": "02 Cembalo Ottoboni.mp4",
+    "videoGuid": "aed56d1e-3903-4502-bc7c-921836141cfe",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/aed56d1e-3903-4502-bc7c-921836141cfe",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/aed56d1e-3903-4502-bc7c-921836141cfe",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:51:17.848Z"
+  },
+  "3": {
+    "id": 3,
+    "originalFile": "03 Cembalo O. GUARRACINO, Napoli, sec. XVII.mp4",
+    "videoGuid": "feb65d33-4899-41db-88d0-cfaa5bb0abd3",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/feb65d33-4899-41db-88d0-cfaa5bb0abd3",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/feb65d33-4899-41db-88d0-cfaa5bb0abd3",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:51:23.687Z"
+  },
+  "4": {
+    "id": 4,
+    "originalFile": "04 Cembalo A.F. SANTOS, Valladolid, 1728.mp4",
+    "videoGuid": "0a430693-ebad-40b6-bb36-46c48bb14c9c",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/0a430693-ebad-40b6-bb36-46c48bb14c9c",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/0a430693-ebad-40b6-bb36-46c48bb14c9c",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:51:28.026Z"
+  },
+  "5": {
+    "id": 5,
+    "originalFile": "05 Spinetta Bertoni.mp4",
+    "videoGuid": "27b50735-74f9-4b6a-8aff-578f5dff064d",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/27b50735-74f9-4b6a-8aff-578f5dff064d",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/27b50735-74f9-4b6a-8aff-578f5dff064d",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:51:32.994Z"
+  },
+  "6": {
+    "id": 6,
+    "originalFile": "06 Spinetta Bassi.mp4",
+    "videoGuid": "1aa84bca-db2b-4c48-95c1-08734de888dc",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/1aa84bca-db2b-4c48-95c1-08734de888dc",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/1aa84bca-db2b-4c48-95c1-08734de888dc",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:51:37.294Z"
+  },
+  "7": {
+    "id": 7,
+    "originalFile": "07 Arpicordo B. CARENONUS SALODIENSIS, Salo, 1700.mp4",
+    "videoGuid": "044fb7c1-6108-44e1-91df-03a41f5930dc",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/044fb7c1-6108-44e1-91df-03a41f5930dc",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/044fb7c1-6108-44e1-91df-03a41f5930dc",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:57:42.749Z"
+  },
+  "8": {
+    "id": 8,
+    "originalFile": "08 Cembalo ravale da J TREYER \"L'EMPEREUR\", Parigi, 1759.mp4",
+    "videoGuid": "bb974b0c-2c5c-4163-a64e-89414a495790",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/bb974b0c-2c5c-4163-a64e-89414a495790",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/bb974b0c-2c5c-4163-a64e-89414a495790",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:57:50.358Z"
+  },
+  "9": {
+    "id": 9,
+    "originalFile": "09 Cembalo \"combinatorio\" J.L. HELLEN, Berna, 1763.mp4",
+    "videoGuid": "03742b21-2858-4fd7-8021-717c33a485e4",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/03742b21-2858-4fd7-8021-717c33a485e4",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/03742b21-2858-4fd7-8021-717c33a485e4",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:57:58.759Z"
+  },
+  "10": {
+    "id": 10,
+    "originalFile": "10 Fortepiano a coda, Nannette Stein e Matthaus Andreas Stein.mp4",
+    "videoGuid": "9332c2d1-76ba-49b5-af57-995a8660a9a0",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/9332c2d1-76ba-49b5-af57-995a8660a9a0",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/9332c2d1-76ba-49b5-af57-995a8660a9a0",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:58:03.613Z"
+  },
+  "11": {
+    "id": 11,
+    "originalFile": "11 Fortepiano A. WALTER, Vienna, c. 1789.mp4",
+    "videoGuid": "35339223-bc36-48f0-a539-1dec7180b709",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/35339223-bc36-48f0-a539-1dec7180b709",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/35339223-bc36-48f0-a539-1dec7180b709",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:58:19.563Z"
+  },
+  "12": {
+    "id": 12,
+    "originalFile": "12 Fortepiano A. WALTER, Vienna c. 1796 (1).mp4",
+    "videoGuid": "20b2b03a-c374-41f1-8845-5e1cbe36117c",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/20b2b03a-c374-41f1-8845-5e1cbe36117c",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/20b2b03a-c374-41f1-8845-5e1cbe36117c",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:58:23.778Z"
+  },
+  "13": {
+    "id": 13,
+    "originalFile": "13 Fortepiano J. SCHANTZ, Vienna, c. 1810.mp4",
+    "videoGuid": "33202a7d-9947-47b3-a4d3-ae2beb80d7a8",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/33202a7d-9947-47b3-a4d3-ae2beb80d7a8",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/33202a7d-9947-47b3-a4d3-ae2beb80d7a8",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:58:28.617Z"
+  },
+  "14": {
+    "id": 14,
+    "originalFile": "14 Fortepiano J. SCHANZ, Vienna, 1810-1820.mp4",
+    "videoGuid": "23843e05-1418-40aa-bfa1-cb9e1eae48f5",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/23843e05-1418-40aa-bfa1-cb9e1eae48f5",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/23843e05-1418-40aa-bfa1-cb9e1eae48f5",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:58:36.157Z"
+  },
+  "15": {
+    "id": 15,
+    "originalFile": "15 L. Van Beethoven (1770-1827) Sonatina In Sol Maggiore.mp4",
+    "videoGuid": "4ada44f2-a5de-4e66-81ea-5c924097a177",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/4ada44f2-a5de-4e66-81ea-5c924097a177",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/4ada44f2-a5de-4e66-81ea-5c924097a177",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:58:36.645Z"
+  },
+  "16": {
+    "id": 16,
+    "originalFile": "16 Fortepiano C. GRAF, Vienna, c. 1834.mp4",
+    "videoGuid": "e567d68e-f35b-4208-92d9-72be672e6b37",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/e567d68e-f35b-4208-92d9-72be672e6b37",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/e567d68e-f35b-4208-92d9-72be672e6b37",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:11:46.527Z"
+  },
+  "17": {
+    "id": 17,
+    "originalFile": "17 Fortepiano C. GRAF, Vienna, c. 1834.mp4",
+    "videoGuid": "4ef32a9f-fb99-4b55-bc7c-37f133d8cccf",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/4ef32a9f-fb99-4b55-bc7c-37f133d8cccf",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/4ef32a9f-fb99-4b55-bc7c-37f133d8cccf",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:58:42.847Z"
+  },
+  "18": {
+    "id": 18,
+    "originalFile": "18 Fortepiano J.B. STREICHER.mp4",
+    "videoGuid": "0afa05cd-f5ce-4e1a-8b3b-205282766871",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/0afa05cd-f5ce-4e1a-8b3b-205282766871",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/0afa05cd-f5ce-4e1a-8b3b-205282766871",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:58:47.076Z"
+  },
+  "19": {
+    "id": 19,
+    "originalFile": "19 Fortepiano J. DOHNAL, figlio, Vienna c. 1830.mp4",
+    "videoGuid": "f2ee341e-696c-4340-8353-689380059b5e",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/f2ee341e-696c-4340-8353-689380059b5e",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/f2ee341e-696c-4340-8353-689380059b5e",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:58:48.938Z"
+  },
+  "20": {
+    "id": 20,
+    "originalFile": "20 Fortepiano M. SCHOTT.mp4",
+    "videoGuid": "ab64316d-0f2a-4909-873d-b91fc34127dd",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/ab64316d-0f2a-4909-873d-b91fc34127dd",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/ab64316d-0f2a-4909-873d-b91fc34127dd",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:58:54.979Z"
+  },
+  "21": {
+    "id": 21,
+    "originalFile": "21 Fortepiano I. BOSENDORFER, Vienna, c. 1850.mp4",
+    "videoGuid": "f5e6656e-3ab5-424b-b3d5-529ef4f09a1e",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/f5e6656e-3ab5-424b-b3d5-529ef4f09a1e",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/f5e6656e-3ab5-424b-b3d5-529ef4f09a1e",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:58:58.380Z"
+  },
+  "22": {
+    "id": 22,
+    "originalFile": "22 Fortepiano C. PLEYEL, Parigi, 1839.mp4",
+    "videoGuid": "102fef0f-58ec-4984-abf7-dacb8ba72784",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/102fef0f-58ec-4984-abf7-dacb8ba72784",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/102fef0f-58ec-4984-abf7-dacb8ba72784",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:59:05.890Z"
+  },
+  "23": {
+    "id": 23,
+    "originalFile": "23 Fortepiano C. PLEYEL, Parigi, 1852.mp4",
+    "videoGuid": "50b83055-94cc-42e0-9a3a-83e4e98cb5ea",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/50b83055-94cc-42e0-9a3a-83e4e98cb5ea",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/50b83055-94cc-42e0-9a3a-83e4e98cb5ea",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:59:13.766Z"
+  },
+  "24": {
+    "id": 24,
+    "originalFile": "24 Fortepiano BOISSELOT ET FILS, Marsiglia, 1844.mp4",
+    "videoGuid": "ab2a32f4-5bd7-456c-90c5-3d18fb5f6bcf",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/ab2a32f4-5bd7-456c-90c5-3d18fb5f6bcf",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/ab2a32f4-5bd7-456c-90c5-3d18fb5f6bcf",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:59:20.608Z"
+  },
+  "25": {
+    "id": 25,
+    "originalFile": "25 Fortepiano P.O. ERARD, Londra, c. 1853.mp4",
+    "videoGuid": "1c08665d-7bdf-4a0e-ac9f-fbaece2335aa",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/1c08665d-7bdf-4a0e-ac9f-fbaece2335aa",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/1c08665d-7bdf-4a0e-ac9f-fbaece2335aa",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:59:27.997Z"
+  },
+  "26": {
+    "id": 26,
+    "originalFile": "26 Fortepiano da boudoir (con scatola da cucito).mpg",
+    "videoGuid": "1657dc5c-df3a-4ce4-bdb8-8e1bbaff9700",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/1657dc5c-df3a-4ce4-bdb8-8e1bbaff9700",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/1657dc5c-df3a-4ce4-bdb8-8e1bbaff9700",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:59:29.797Z"
+  },
+  "28": {
+    "id": 28,
+    "originalFile": "28 Fortepiano a tavolo FRATELLI ELLI, Milano, 1800.mp4",
+    "videoGuid": "deccc7a4-2a52-4157-aff2-c5d535833c63",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/deccc7a4-2a52-4157-aff2-c5d535833c63",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/deccc7a4-2a52-4157-aff2-c5d535833c63",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:59:31.361Z"
+  },
+  "29": {
+    "id": 29,
+    "originalFile": "29 Fortepiano G. SCAPPA, Milano, 1796.mp4",
+    "videoGuid": "05982627-316b-4207-abce-26f92f611fbf",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/05982627-316b-4207-abce-26f92f611fbf",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/05982627-316b-4207-abce-26f92f611fbf",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:59:33.012Z"
+  },
+  "30": {
+    "id": 30,
+    "originalFile": "30 Fortepiano dipinto, Italia, sec. XVIII.mp4",
+    "videoGuid": "5b8e500b-ab0a-4bb2-bbc7-bc8bc3ce2d03",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/5b8e500b-ab0a-4bb2-bbc7-bc8bc3ce2d03",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/5b8e500b-ab0a-4bb2-bbc7-bc8bc3ce2d03",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:59:34.970Z"
+  },
+  "32": {
+    "id": 32,
+    "originalFile": "32 Fortepiano J.H. PAPE, Parigi, 1825.mp4",
+    "videoGuid": "8a6dd3a0-f47b-4c87-8912-daabfbf1ddc9",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/8a6dd3a0-f47b-4c87-8912-daabfbf1ddc9",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/8a6dd3a0-f47b-4c87-8912-daabfbf1ddc9",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:59:37.181Z"
+  },
+  "33": {
+    "id": 33,
+    "originalFile": "33 Pianoforte E. BETSY (padre).mp4",
+    "videoGuid": "afc83c06-e42f-4b08-a6b9-58eb97422a71",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/afc83c06-e42f-4b08-a6b9-58eb97422a71",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/afc83c06-e42f-4b08-a6b9-58eb97422a71",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:59:38.340Z"
+  },
+  "34": {
+    "id": 34,
+    "originalFile": "34 Pianoforte [A. WOLFF]  PLEYEL, Paris, 1882.mp4",
+    "videoGuid": "df0b0ac4-fa99-4e08-9e07-d5a428a06ec2",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/df0b0ac4-fa99-4e08-9e07-d5a428a06ec2",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/df0b0ac4-fa99-4e08-9e07-d5a428a06ec2",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:59:44.444Z"
+  },
+  "35": {
+    "id": 35,
+    "originalFile": "35 Pianoforte J. BLUTHNER, Leipzig, 1902.mp4",
+    "videoGuid": "3fb281bf-fc62-4384-9db2-981cc887fefd",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/3fb281bf-fc62-4384-9db2-981cc887fefd",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/3fb281bf-fc62-4384-9db2-981cc887fefd",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T17:59:58.990Z"
+  },
+  "36": {
+    "id": 36,
+    "originalFile": "36 Pianoforte aliquot J. BLUTHNER, Leipzig, 1929.mp4",
+    "videoGuid": "501138c6-d8d8-4d9a-8c47-5e22f5d80464",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/501138c6-d8d8-4d9a-8c47-5e22f5d80464",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/501138c6-d8d8-4d9a-8c47-5e22f5d80464",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:00:03.652Z"
+  },
+  "37": {
+    "id": 37,
+    "originalFile": "37 Pianoforte C. BECHSTEIN, Berlino, 1963.mp4",
+    "videoGuid": "2751e544-eb03-4e7a-b73d-23a43e473785",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/2751e544-eb03-4e7a-b73d-23a43e473785",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/2751e544-eb03-4e7a-b73d-23a43e473785",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:00:12.037Z"
+  },
+  "38": {
+    "id": 38,
+    "originalFile": "38 Pianoforte a coda Steinway & Sons, Amburgo, 1991, n.518428.mp4",
+    "videoGuid": "7fa3ebde-162c-4ffd-87da-758677f7e75e",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/7fa3ebde-162c-4ffd-87da-758677f7e75e",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/7fa3ebde-162c-4ffd-87da-758677f7e75e",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:00:14.451Z"
+  },
+  "39": {
+    "id": 39,
+    "originalFile": "39 Organo B. RAVANI, Toscana, secolo XVII.mp4",
+    "videoGuid": "65108d29-5d15-4a52-be1a-704c9d266675",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/65108d29-5d15-4a52-be1a-704c9d266675",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/65108d29-5d15-4a52-be1a-704c9d266675",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:00:21.113Z"
+  },
+  "40": {
+    "id": 40,
+    "originalFile": "40 Organo veneto, sec. XVIII.mp4",
+    "videoGuid": "dad31bda-32ed-4aee-884a-cc03503962a1",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/dad31bda-32ed-4aee-884a-cc03503962a1",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/dad31bda-32ed-4aee-884a-cc03503962a1",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:00:22.575Z"
+  },
+  "41": {
+    "id": 41,
+    "originalFile": "41 Organo D.A. ROSSI, Napoli,  sec. XVIII.mp4",
+    "videoGuid": "37721129-341a-47e3-a0b2-2b5901ff0c19",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/37721129-341a-47e3-a0b2-2b5901ff0c19",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/37721129-341a-47e3-a0b2-2b5901ff0c19",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:00:29.100Z"
+  },
+  "42": {
+    "id": 42,
+    "originalFile": "42 Arpa diatonica, Anonimo, 1830.mp4",
+    "videoGuid": "08d8ed63-7120-4d39-9bdb-54b9b6ae8575",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/08d8ed63-7120-4d39-9bdb-54b9b6ae8575",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/08d8ed63-7120-4d39-9bdb-54b9b6ae8575",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:00:37.476Z"
+  },
+  "43": {
+    "id": 43,
+    "originalFile": "43 Arpa Holtzman.mpg",
+    "videoGuid": "fcf8c720-467f-49de-ba2f-b5755f4b7722",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/fcf8c720-467f-49de-ba2f-b5755f4b7722",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/fcf8c720-467f-49de-ba2f-b5755f4b7722",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:00:40.530Z"
+  },
+  "44": {
+    "id": 44,
+    "originalFile": "44 Arpa Jean-Henri Naderman.mpg",
+    "videoGuid": "09129e83-66cf-4705-a082-2d0694a74a5c",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/09129e83-66cf-4705-a082-2d0694a74a5c",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/09129e83-66cf-4705-a082-2d0694a74a5c",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:00:44.774Z"
+  },
+  "45": {
+    "id": 45,
+    "originalFile": "45 Arpa J.H. NADERMAN, Parigi, 1790.mp4",
+    "videoGuid": "7d7df3f4-732d-452c-b164-67a4119cfc7a",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/7d7df3f4-732d-452c-b164-67a4119cfc7a",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/7d7df3f4-732d-452c-b164-67a4119cfc7a",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:00:51.204Z"
+  },
+  "46": {
+    "id": 46,
+    "originalFile": "46 Arpa [J. B.] HURTZ, Parigi, c. 1785.mp4",
+    "videoGuid": "51ce37a3-f798-4d77-bfd7-7d5e8597e9e7",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/51ce37a3-f798-4d77-bfd7-7d5e8597e9e7",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/51ce37a3-f798-4d77-bfd7-7d5e8597e9e7",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:01:04.322Z"
+  },
+  "47": {
+    "id": 47,
+    "originalFile": "47 Arpa [P.J.] ZIMMERMAN, Parigi, c. 1785.mp4",
+    "videoGuid": "bedc84c3-4332-4335-b953-8322bd23b892",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/bedc84c3-4332-4335-b953-8322bd23b892",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/bedc84c3-4332-4335-b953-8322bd23b892",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:01:28.386Z"
+  },
+  "48": {
+    "id": 48,
+    "originalFile": "48 Arpa Cousineau.mp4",
+    "videoGuid": "080ec496-28eb-4f9e-9a21-e7fa01988248",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/080ec496-28eb-4f9e-9a21-e7fa01988248",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/080ec496-28eb-4f9e-9a21-e7fa01988248",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:01:44.667Z"
+  },
+  "49": {
+    "id": 49,
+    "originalFile": "49 Arpa [J.G.] COUSINEAU, Parigi, tra il 1815 e il 1818.mp4",
+    "videoGuid": "c0ef0b76-4758-426f-a801-b61b82f8d462",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/c0ef0b76-4758-426f-a801-b61b82f8d462",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/c0ef0b76-4758-426f-a801-b61b82f8d462",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:01:57.311Z"
+  },
+  "50": {
+    "id": 50,
+    "originalFile": "50 Arpa Naderman.mp4",
+    "videoGuid": "dc1d580a-73f1-44a0-965d-b491e78c3db9",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/dc1d580a-73f1-44a0-965d-b491e78c3db9",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/dc1d580a-73f1-44a0-965d-b491e78c3db9",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:02:15.815Z"
+  },
+  "51": {
+    "id": 51,
+    "originalFile": "51 F.J. Naderman (1772 ca.-1835).mpg",
+    "videoGuid": "6eddcbee-dc05-4d9d-bf07-94c20066f1bc",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/6eddcbee-dc05-4d9d-bf07-94c20066f1bc",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/6eddcbee-dc05-4d9d-bf07-94c20066f1bc",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:02:22.025Z"
+  },
+  "52": {
+    "id": 52,
+    "originalFile": "52 Arpa Sebastien Erard, Londra, 1825.mpg",
+    "videoGuid": "cae3bd93-c928-4b76-926f-af05579cf94b",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/cae3bd93-c928-4b76-926f-af05579cf94b",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/cae3bd93-c928-4b76-926f-af05579cf94b",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:02:42.009Z"
+  },
+  "53": {
+    "id": 53,
+    "originalFile": "53 Salterio (25 cori).mp4",
+    "videoGuid": "43773364-9aaa-4bde-a656-8680ebb4ae84",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/43773364-9aaa-4bde-a656-8680ebb4ae84",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/43773364-9aaa-4bde-a656-8680ebb4ae84",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:03:06.057Z"
+  },
+  "54": {
+    "id": 54,
+    "originalFile": "54 Salterio (24 cori).mpg",
+    "videoGuid": "68d6eea1-35e3-45cc-ae9d-5214021d63e1",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/68d6eea1-35e3-45cc-ae9d-5214021d63e1",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/68d6eea1-35e3-45cc-ae9d-5214021d63e1",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:03:16.996Z"
+  },
+  "55": {
+    "id": 55,
+    "originalFile": "55 Salterio (27 cori).mpg",
+    "videoGuid": "4f0b8a12-9f5b-439d-b080-7a04288e4890",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/4f0b8a12-9f5b-439d-b080-7a04288e4890",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/4f0b8a12-9f5b-439d-b080-7a04288e4890",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:03:23.443Z"
+  },
+  "56": {
+    "id": 56,
+    "originalFile": "56 Salterio (23 cori).mp4",
+    "videoGuid": "66c469fd-6c41-4d59-ad90-888a671e71f4",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/66c469fd-6c41-4d59-ad90-888a671e71f4",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/66c469fd-6c41-4d59-ad90-888a671e71f4",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:03:34.968Z"
+  },
+  "57": {
+    "id": 57,
+    "originalFile": "57 Salterio (26 cori).mp4",
+    "videoGuid": "c1e42d93-ca3d-4a23-b01f-32914d33466c",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/c1e42d93-ca3d-4a23-b01f-32914d33466c",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/c1e42d93-ca3d-4a23-b01f-32914d33466c",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:03:40.350Z"
+  },
+  "58": {
+    "id": 58,
+    "originalFile": "58 Mandolino a sei corde Carlo Albertini e figlio, Lombardia, prima meta del secolo XX.mpg",
+    "videoGuid": "7b4abc8a-bf0b-4632-aa33-71ba0178084b",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/7b4abc8a-bf0b-4632-aa33-71ba0178084b",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/7b4abc8a-bf0b-4632-aa33-71ba0178084b",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:03:48.255Z"
+  },
+  "59": {
+    "id": 59,
+    "originalFile": "59 Mandolino Napoli, secolo XX.mpg",
+    "videoGuid": "05335938-53fe-43d5-a6c8-4df57394b66a",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/05335938-53fe-43d5-a6c8-4df57394b66a",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/05335938-53fe-43d5-a6c8-4df57394b66a",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:03:53.381Z"
+  },
+  "60": {
+    "id": 60,
+    "originalFile": "60 Chitarra Fernando del Perugia, Firenze, 1894.mpg",
+    "videoGuid": "186e2165-31cb-4e69-b44a-bae2dbdfe2ed",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/186e2165-31cb-4e69-b44a-bae2dbdfe2ed",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/186e2165-31cb-4e69-b44a-bae2dbdfe2ed",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:03:58.811Z"
+  },
+  "61": {
+    "id": 61,
+    "originalFile": "61 Fortepiano JOHANN SCHANZ, \"Archinto\", Vienna, c.1816.mp4",
+    "videoGuid": "4e0f4be7-98f9-4c75-a42d-5584592d6e3f",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/4e0f4be7-98f9-4c75-a42d-5584592d6e3f",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/4e0f4be7-98f9-4c75-a42d-5584592d6e3f",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:04:08.354Z"
+  },
+  "62": {
+    "id": 62,
+    "originalFile": "62 Pianoforte a coda JOHANN HEITZMANN UND SOHN, Vienna, c.1870.mp4",
+    "videoGuid": "fecc6434-dcc5-439a-89b0-f66acf73bfda",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/fecc6434-dcc5-439a-89b0-f66acf73bfda",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/fecc6434-dcc5-439a-89b0-f66acf73bfda",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:04:16.803Z"
+  },
+  "63": {
+    "id": 63,
+    "originalFile": "63 Pianoforte [A. WOLFF ET COMPAGNIE]  PLEYEL, Paris, 1885.mp4",
+    "videoGuid": "92553afe-0d4d-436a-9916-cef125e57582",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/92553afe-0d4d-436a-9916-cef125e57582",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/92553afe-0d4d-436a-9916-cef125e57582",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:04:22.833Z"
+  },
+  "64": {
+    "id": 64,
+    "originalFile": "64 Pianoforte a coda Erard, Parigi 1883.mp4",
+    "videoGuid": "8033d91f-a2ad-4e1b-b5e1-8f6cb0c7cf25",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/8033d91f-a2ad-4e1b-b5e1-8f6cb0c7cf25",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/8033d91f-a2ad-4e1b-b5e1-8f6cb0c7cf25",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:04:30.367Z"
+  },
+  "65": {
+    "id": 65,
+    "originalFile": "65 Pianoforte a coda Erard, Parigi 1892.mp4",
+    "videoGuid": "cf77007b-95e7-4a40-947e-fd62b9f73d18",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/cf77007b-95e7-4a40-947e-fd62b9f73d18",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/cf77007b-95e7-4a40-947e-fd62b9f73d18",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:04:35.293Z"
+  },
+  "78": {
+    "id": 78,
+    "originalFile": "78_Pleyel Forte.mp4",
+    "videoGuid": "d95767a5-f3e2-4d66-acab-026b11033f3c",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/d95767a5-f3e2-4d66-acab-026b11033f3c",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/d95767a5-f3e2-4d66-acab-026b11033f3c",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:04:37.066Z"
+  },
+  "88": {
+    "id": 88,
+    "originalFile": "88_EUGENIO_VIOLINO.mp4",
+    "videoGuid": "8ae9a263-26ad-476c-bf2f-7ee029d1ee8d",
+    "embedUrl": "https://iframe.mediadelivery.net/embed/578573/8ae9a263-26ad-476c-bf2f-7ee029d1ee8d",
+    "directUrl": "https://iframe.mediadelivery.net/play/578573/8ae9a263-26ad-476c-bf2f-7ee029d1ee8d",
+    "method": "stream",
+    "uploadedAt": "2026-01-11T18:11:54.215Z"
+  }
+}

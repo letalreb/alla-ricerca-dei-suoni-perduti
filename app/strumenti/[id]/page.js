@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import Link from 'next/link';
 import { instruments } from '../../data/instruments';
-import ArchivePlayer from '../../_components/ArchivePlayer';
+import UniversalPlayer from '../../_components/UniversalPlayer';
 import styles from './page.module.css';
 
 export default async function InstrumentPage({ params }) {
@@ -62,12 +62,8 @@ export default async function InstrumentPage({ params }) {
 
         <div className={styles.videoSection}>
           <h2 className={styles.videoTitle}>Ascolta lo strumento</h2>
-          {instrument.archiveId ? (
-            <ArchivePlayer 
-              archiveId={instrument.archiveId}
-              embedUrl={instrument.embedUrl}
-              title={instrument.name}
-            />
+          {instrument.audioFile || instrument.bunnyMethod || instrument.archiveId ? (
+            <UniversalPlayer instrument={instrument} />
           ) : videoPath ? (
             <div className={styles.videoWrapper}>
               <video 

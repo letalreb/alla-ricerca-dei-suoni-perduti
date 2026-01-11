@@ -1,0 +1,619 @@
+// Database completo dei 92 strumenti musicali della collezione
+// "Alla Ricerca dei Suoni Perduti"
+
+export const instruments = [
+  {
+    id: 1,
+    name: "Cembalo Giovanni Natale Boccalari, Napoli, 1679",
+    audioFile: "01 Cembalo G.N. BOCCALARI, Napoli, 1679.mp4",
+    archiveId: "villa-medici-giulini-01-cembalo-g-n-boccalari-napoli-1679",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-01-cembalo-g-n-boccalari-napoli-1679",
+    bunnyMethod: "stream",
+    bunnyVideoGuid: "521b33ae-53ec-4163-8f7f-badbb767d0c0",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/521b33ae-53ec-4163-8f7f-badbb767d0c0",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/521b33ae-53ec-4163-8f7f-badbb767d0c0"
+  },
+  {
+    id: 2,
+    name: "Cembalo \"Ottoboni\", Italia, (Roma?), seconda metà del secolo XVII",
+    audioFile: "02 Cembalo Ottoboni.mp4",
+    archiveId: "villa-medici-giulini-02-cembalo-ottoboni",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-02-cembalo-ottoboni",
+    bunnyMethod: "stream",
+    bunnyVideoGuid: "aed56d1e-3903-4502-bc7c-921836141cfe",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/aed56d1e-3903-4502-bc7c-921836141cfe",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/aed56d1e-3903-4502-bc7c-921836141cfe"
+  },
+  {
+    id: 3,
+    name: "Cembalo Onofrio Guarracino (attribuito), Napoli, seconda metà del secolo XVII",
+    audioFile: "03 Cembalo O. GUARRACINO, Napoli, sec. XVII.mp4",
+    archiveId: "villa-medici-giulini-03-cembalo-o-guarracino-napoli-sec-xvii",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-03-cembalo-o-guarracino-napoli-sec-xvii",
+    bunnyMethod: "stream",
+    bunnyVideoGuid: "feb65d33-4899-41db-88d0-cfaa5bb0abd3",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/feb65d33-4899-41db-88d0-cfaa5bb0abd3",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/feb65d33-4899-41db-88d0-cfaa5bb0abd3"
+  },
+  {
+    id: 4,
+    name: "Cembalo Andrés Fernández Santos, Valladolid, 1728",
+    audioFile: "04 Cembalo A.F. SANTOS, Valladolid, 1728.mp4",
+    archiveId: "villa-medici-giulini-04-cembalo-a-f-santos-valladolid-1728",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-04-cembalo-a-f-santos-valladolid-1728",
+    bunnyMethod: "stream",
+    bunnyVideoGuid: "0a430693-ebad-40b6-bb36-46c48bb14c9c",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/0a430693-ebad-40b6-bb36-46c48bb14c9c",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/0a430693-ebad-40b6-bb36-46c48bb14c9c"
+  },
+  {
+    id: 5,
+    name: "Spinetta trapezoidale all'ottava Rinaldo Bertoni, Bologna, 1707",
+    audioFile: "05 Spinetta Bertoni.mp4",
+    archiveId: "villa-medici-giulini-05-spinetta-bertoni",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-05-spinetta-bertoni",
+    bunnyMethod: "stream",
+    bunnyVideoGuid: "27b50735-74f9-4b6a-8aff-578f5dff064d",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/27b50735-74f9-4b6a-8aff-578f5dff064d",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/27b50735-74f9-4b6a-8aff-578f5dff064d"
+  },
+  {
+    id: 6,
+    name: "Spinetta rettangolare all'ottava Hieronimus (Girolamo) Bassi, Venezia, 1713",
+    audioFile: "06 Spinetta Bassi.mp4",
+    archiveId: "villa-medici-giulini-06-spinetta-bassi",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-06-spinetta-bassi",
+    bunnyMethod: "stream",
+    bunnyVideoGuid: "1aa84bca-db2b-4c48-95c1-08734de888dc",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/1aa84bca-db2b-4c48-95c1-08734de888dc",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/1aa84bca-db2b-4c48-95c1-08734de888dc"
+  },
+  {
+    id: 7,
+    name: "Arpicordo rettangolare Baptista Carenonus, Salò, 1700 (?)",
+    audioFile: "07 Arpicordo B. CARENONUS SALODIENSIS, Salo, 1700.mp4",
+    archiveId: "villa-medici-giulini-07-arpicordo-b-carenonus-salodiensis-salo-1700",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-07-arpicordo-b-carenonus-salodiensis-salo-1700"
+  },
+  {
+    id: 8,
+    name: "Cembalo fiammingo trasformato in fortepiano \"ravalé\" da Joseph Treyer \"L'empereur\", Parigi, 1759 \"L'empereur\"",
+    audioFile: "08 Cembalo ravale da J TREYER \"L'EMPEREUR\", Parigi, 1759.mp4",
+    archiveId: "vmg-08-cembalo-ravale-da-j-treyer-l-empereur-parigi-1759",
+    embedUrl: "https://archive.org/embed/vmg-08-cembalo-ravale-da-j-treyer-l-empereur-parigi-1759"
+  },
+  {
+    id: 9,
+    name: "Cembalo e fortepiano \"combinatorio\" Johann Ludwig Hellen (Hehlen), Berna, 1763",
+    audioFile: "09 Cembalo \"combinatorio\" J.L. HELLEN, Berna, 1763.mp4",
+    archiveId: "vmg-09-cembalo-combinatorio-j-l-hellen-berna-1763",
+    embedUrl: "https://archive.org/embed/vmg-09-cembalo-combinatorio-j-l-hellen-berna-1763"
+  },
+  {
+    id: 10,
+    name: "Fortepiano a coda Nannette Stein e Matthäus Andreas Stein (Frère et Soeur Stein), Vienna, tra il 1794 e il 1802",
+    audioFile: "10 Fortepiano a coda, Nannette Stein e Matthaus Andreas Stein.mp4",
+    archiveId: "villa-medici-giulini-10-fortepiano-a-coda-nannette-stein-e-matthaus-andreas-stein",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-10-fortepiano-a-coda-nannette-stein-e-matthaus-andreas-stein"
+  },
+  {
+    id: 11,
+    name: "Fortepiano a coda Anton Walter, Vienna, ca.",
+    year: "1789",
+    audioFile: "11 Fortepiano A. WALTER, Vienna, c. 1789.mp4",
+    archiveId: "villa-medici-giulini-11-fortepiano-a-walter-vienna-c-1789",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-11-fortepiano-a-walter-vienna-c-1789"
+  },
+  {
+    id: 12,
+    name: "Fortepiano a coda Anton Walter, Vienna, ca.",
+    year: "1796",
+    audioFile: "12 Fortepiano A. WALTER, Vienna c. 1796 (1).mp4",
+    archiveId: "vmg-12-fortepiano-a-walter-vienna-c-1796-1",
+    embedUrl: "https://archive.org/embed/vmg-12-fortepiano-a-walter-vienna-c-1796-1"
+  },
+  {
+    id: 13,
+    name: "Fortepiano a coda Johann Schantz, Vienna, ca.",
+    year: "1810",
+    audioFile: "13 Fortepiano J. SCHANTZ, Vienna, c. 1810.mp4",
+    archiveId: "villa-medici-giulini-13-fortepiano-j-schantz-vienna-c-1810",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-13-fortepiano-j-schantz-vienna-c-1810"
+  },
+  {
+    id: 14,
+    name: "Fortepiano a coda Johann Schantz, Vienna, 1810-20",
+    audioFile: "14 Fortepiano J. SCHANZ, Vienna, 1810-1820.mp4",
+    archiveId: "villa-medici-giulini-14-fortepiano-j-schanz-vienna-1810-1820",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-14-fortepiano-j-schanz-vienna-1810-1820"
+  },
+  {
+    id: 15,
+    name: "Fortepiano a coda Johann o Joseph Fritz, Vienna, ca. 1830",
+    year: "1830",
+    audioFile: "15 L. Van Beethoven (1770-1827) Sonatina In Sol Maggiore.mp4",
+    archiveId: "villa-medici-giulini-15-l-van-beethoven-1770-1827-sonatina-in-sol-maggiore",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-15-l-van-beethoven-1770-1827-sonatina-in-sol-maggiore"
+  },
+  {
+    id: 16,
+    name: "Fortepiano a coda Conrad Graf, Vienna, ca.",
+    year: "1834",
+    audioFile: "16 F. Schubert (1797-1827) Improvviso opera postuma in la bemolle maggiore.mp4",
+    archiveId: "villa-medici-giulini-16-fortepiano-c-graf-vienna-c-1834",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-16-fortepiano-c-graf-vienna-c-1834"
+  },
+  {
+    id: 17,
+    name: "Fortepiano a coda Conrad Graf, Vienna, ca.",
+    year: "1834",
+    audioFile: "17 Fortepiano C. GRAF, Vienna, c. 1834.mp4",
+    archiveId: "villa-medici-giulini-17-fortepiano-c-graf-vienna-c-1834",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-17-fortepiano-c-graf-vienna-c-1834"
+  },
+  {
+    id: 18,
+    name: "Fortepiano a coda Johann Baptist Streicher, Vienna, 1837",
+    audioFile: "18 Fortepiano J.B. STREICHER.mp4",
+    archiveId: "villa-medici-giulini-18-fortepiano-j-b-streicher",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-18-fortepiano-j-b-streicher"
+  },
+  {
+    id: 19,
+    name: "Fortepiano a coda Joseph Dohnal figlio, Vienna, ca. 1830",
+    year: "1830",
+    audioFile: "19 Fortepiano J. DOHNAL, figlio, Vienna c. 1830.mp4",
+    archiveId: "villa-medici-giulini-19-fortepiano-j-dohnal-figlio-vienna-c-1830",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-19-fortepiano-j-dohnal-figlio-vienna-c-1830"
+  },
+  {
+    id: 20,
+    name: "Fortepiano a coda Maximilian Schott, Vienna, ca. 1840",
+    year: "1840",
+    audioFile: "20 Fortepiano M. SCHOTT.mp4",
+    archiveId: "villa-medici-giulini-20-fortepiano-m-schott",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-20-fortepiano-m-schott"
+  },
+  {
+    id: 21,
+    name: "Fortepiano a coda Ignaz Bösendorfer, Vienna, ca. 1850",
+    year: "1850",
+    audioFile: "21 Fortepiano I. BOSENDORFER, Vienna, c. 1850.mp4",
+    archiveId: "villa-medici-giulini-21-fortepiano-i-bosendorfer-vienna-c-1850",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-21-fortepiano-i-bosendorfer-vienna-c-1850"
+  },
+  {
+    id: 22,
+    name: "Fortepiano a coda Ignace Pleyel, Parigi, 1839",
+    audioFile: "22 Fortepiano C. PLEYEL, Parigi, 1839.mp4",
+    archiveId: "villa-medici-giulini-22-fortepiano-c-pleyel-parigi-1839",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-22-fortepiano-c-pleyel-parigi-1839"
+  },
+  {
+    id: 23,
+    name: "Fortepiano a coda Ignace Pleyel, Parigi, 1852",
+    audioFile: "23 Fortepiano C. PLEYEL, Parigi, 1852.mp4",
+    archiveId: "villa-medici-giulini-23-fortepiano-c-pleyel-parigi-1852",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-23-fortepiano-c-pleyel-parigi-1852"
+  },
+  {
+    id: 24,
+    name: "Fortepiano a coda Boisselot et Fils, Marsiglia, dopo 1844",
+    audioFile: "24 Fortepiano BOISSELOT ET FILS, Marsiglia, 1844.mp4",
+    archiveId: "villa-medici-giulini-24-fortepiano-boisselot-et-fils-marsiglia-1844",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-24-fortepiano-boisselot-et-fils-marsiglia-1844"
+  },
+  {
+    id: 25,
+    name: "Fortepiano a coda Pierre-Orphée Erard, Londra, ca. 1853",
+    year: "1853",
+    audioFile: "25 Fortepiano P.O. ERARD, Londra, c. 1853.mp4",
+    archiveId: "villa-medici-giulini-25-fortepiano-p-o-erard-londra-c-1853",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-25-fortepiano-p-o-erard-londra-c-1853"
+  },
+  {
+    id: 26,
+    name: "Fortepiano da boudoir (con scatola da cucito), Vienna (?), prima metà del secolo XIX",
+    audioFile: "26 Fortepiano da boudoir (con scatola da cucito).mpg",
+    archiveId: "villa-medici-giulini-26-fortepiano-da-boudoir-con-scatola-da-cucito",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-26-fortepiano-da-boudoir-con-scatola-da-cucito"
+  },
+  {
+    id: 27,
+    name: "Fortepiano a tavolo Johann Christoph Zumpe, Londra, 1780"
+  },
+  {
+    id: 28,
+    name: "Fortepiano a tavolo Fratelli Elli, Milano, 1800",
+    audioFile: "28 Fortepiano a tavolo FRATELLI ELLI, Milano, 1800.mp4",
+    archiveId: "villa-medici-giulini-28-fortepiano-a-tavolo-fratelli-elli-milano-1800",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-28-fortepiano-a-tavolo-fratelli-elli-milano-1800"
+  },
+  {
+    id: 29,
+    name: "Fortepiano a tavolo Gaetano Scappa, Milano, 1796",
+    audioFile: "29 Fortepiano G. SCAPPA, Milano, 1796.mp4",
+    archiveId: "villa-medici-giulini-29-fortepiano-g-scappa-milano-1796",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-29-fortepiano-g-scappa-milano-1796"
+  },
+  {
+    id: 30,
+    name: "Fortepiano a tavolo dipinto Italia (?), seconda metà del secolo XVIII",
+    audioFile: "30 Fortepiano dipinto, Italia, sec. XVIII.mp4",
+    archiveId: "villa-medici-giulini-30-fortepiano-dipinto-italia-sec-xviii",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-30-fortepiano-dipinto-italia-sec-xviii"
+  },
+  {
+    id: 31,
+    name: "Fortepiano a tavolo Italia (?), seconda metà del secolo XVIII"
+  },
+  {
+    id: 32,
+    name: "Fortepiano a tavolo Jean-Henri Pape, Parigi, 1825",
+    audioFile: "32 Fortepiano J.H. PAPE, Parigi, 1825.mp4",
+    archiveId: "villa-medici-giulini-32-fortepiano-j-h-pape-parigi-1825",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-32-fortepiano-j-h-pape-parigi-1825"
+  },
+  {
+    id: 33,
+    name: "Pianoforte a coda Emerich Bétsy (padre), Vienna, 1854",
+    audioFile: "33 Pianoforte E. BETSY (padre).mp4",
+    archiveId: "villa-medici-giulini-33-pianoforte-e-betsy-padre",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-33-pianoforte-e-betsy-padre"
+  },
+  {
+    id: 34,
+    name: "Pianoforte a coda, Modello 3bis [Auguste",
+    year: "Wolff]/Pleyel, Paris, 1882",
+    audioFile: "34 Pianoforte [A. WOLFF]  PLEYEL, Paris, 1882.mp4",
+    archiveId: "villa-medici-giulini-34-pianoforte-a-wolff-pleyel-paris-1882",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-34-pianoforte-a-wolff-pleyel-paris-1882"
+  },
+  {
+    id: 35,
+    name: "Pianoforte a coda Julius Blüthner, Leipzig, 1902",
+    audioFile: "35 Pianoforte J. BLUTHNER, Leipzig, 1902.mp4",
+    archiveId: "villa-medici-giulini-35-pianoforte-j-bluthner-leipzig-1902",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-35-pianoforte-j-bluthner-leipzig-1902"
+  },
+  {
+    id: 36,
+    name: "Pianoforte mezza-coda aliquot Julius Blüthner, Leipzig, 1929",
+    audioFile: "36 Pianoforte aliquot J. BLUTHNER, Leipzig, 1929.mp4",
+    archiveId: "villa-medici-giulini-36-pianoforte-aliquot-j-bluthner-leipzig-1929",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-36-pianoforte-aliquot-j-bluthner-leipzig-1929"
+  },
+  {
+    id: 37,
+    name: "Pianoforte mezza-coda, Modello L",
+    year: "C. Bechstein, Berlino, 1963",
+    audioFile: "37 Pianoforte C. BECHSTEIN, Berlino, 1963.mp4",
+    archiveId: "villa-medici-giulini-37-pianoforte-c-bechstein-berlino-1963",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-37-pianoforte-c-bechstein-berlino-1963"
+  },
+  {
+    id: 38,
+    name: "Pianoforte a coda Modello B Steinway & Sons, Amburgo, 1990",
+    audioFile: "38 Pianoforte a coda Steinway & Sons, Amburgo, 1991, n.518428.mp4",
+    archiveId: "villa-medici-giulini-38-pianoforte-a-coda-steinway-sons-amburgo-1991-n-518428",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-38-pianoforte-a-coda-steinway-sons-amburgo-1991-n-518428"
+  },
+  {
+    id: 39,
+    name: "Organo Bartolomeo Ravani, Lucca, seconda metà del secolo XVII",
+    audioFile: "39 Organo B. RAVANI, Toscana, secolo XVII.mp4",
+    archiveId: "villa-medici-giulini-39-organo-b-ravani-toscana-secolo-xvii",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-39-organo-b-ravani-toscana-secolo-xvii"
+  },
+  {
+    id: 40,
+    name: "Organo Scuola veneziana, seconda metà del secolo XVIII",
+    audioFile: "40 Organo veneto, sec. XVIII.mp4",
+    archiveId: "villa-medici-giulini-40-organo-veneto-sec-xviii",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-40-organo-veneto-sec-xviii"
+  },
+  {
+    id: 41,
+    name: "Organo Dominicus Antonius Rossi (attribuito), Napoli, secolo XVIII",
+    audioFile: "41 Organo D.A. ROSSI, Napoli,  sec. XVIII.mp4",
+    archiveId: "villa-medici-giulini-41-organo-d-a-rossi-napoli-sec-xviii",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-41-organo-d-a-rossi-napoli-sec-xviii"
+  },
+  {
+    id: 42,
+    name: "Arpa diatonica Anonimo, Germania del sud oppure Austria (Vienna?), ca. 1830",
+    year: "1830",
+    audioFile: "42 Arpa diatonica, Anonimo, 1830.mp4",
+    archiveId: "villa-medici-giulini-42-arpa-diatonica-anonimo-1830",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-42-arpa-diatonica-anonimo-1830"
+  },
+  {
+    id: 43,
+    name: "Arpa a pedali a movimento semplice [Godefroid] Holtzman, Parigi, 1775",
+    audioFile: "43 Arpa Holtzman.mpg",
+    archiveId: "villa-medici-giulini-43-arpa-holtzman",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-43-arpa-holtzman"
+  },
+  {
+    id: 44,
+    name: "Arpa a pedali a movimento semplice Jean-",
+    year: "Henri Naderman, Parigi, 1790",
+    audioFile: "44 Arpa Jean-Henri Naderman.mpg",
+    archiveId: "villa-medici-giulini-44-arpa-jean-henri-naderman",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-44-arpa-jean-henri-naderman"
+  },
+  {
+    id: 45,
+    name: "Arpa a pedali a movimento semplice Jean-",
+    year: "Henri Naderman, Parigi, 1790",
+    audioFile: "45 Arpa J.H. NADERMAN, Parigi, 1790.mp4",
+    archiveId: "villa-medici-giulini-45-arpa-j-h-naderman-parigi-1790",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-45-arpa-j-h-naderman-parigi-1790"
+  },
+  {
+    id: 46,
+    name: "Arpa a pedali a movimento semplice [J· B·]",
+    year: "1785",
+    audioFile: "46 Arpa [J. B.] HURTZ, Parigi, c. 1785.mp4",
+    archiveId: "villa-medici-giulini-46-arpa-j-b-hurtz-parigi-c-1785",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-46-arpa-j-b-hurtz-parigi-c-1785"
+  },
+  {
+    id: 47,
+    name: "Arpa a pedali a movimento semplice [Pierre-",
+    year: "1785",
+    audioFile: "47 Arpa [P.J.] ZIMMERMAN, Parigi, c. 1785.mp4",
+    archiveId: "villa-medici-giulini-47-arpa-p-j-zimmerman-parigi-c-1785",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-47-arpa-p-j-zimmerman-parigi-c-1785"
+  },
+  {
+    id: 48,
+    name: "Arpa a pedali a movimento semplice Cousineau Père et Fils, Parigi, ca. 1785",
+    year: "1785",
+    audioFile: "48 Arpa Cousineau.mp4",
+    archiveId: "villa-medici-giulini-48-arpa-cousineau",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-48-arpa-cousineau"
+  },
+  {
+    id: 49,
+    name: "Arpa a pedali a movimento semplice [Jacques-Georges] Cousineau, Parigi, tra il 1815 e il 1818",
+    audioFile: "49 Arpa [J.G.] COUSINEAU, Parigi, tra il 1815 e il 1818.mp4",
+    archiveId: "villa-medici-giulini-49-arpa-j-g-cousineau-parigi-tra-il-1815-e-il-1818",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-49-arpa-j-g-cousineau-parigi-tra-il-1815-e-il-1818"
+  },
+  {
+    id: 50,
+    name: "Arpa a pedali a movimento semplice [Henri-",
+    year: "Jean] Naderman, Parigi, dopo il 1820",
+    audioFile: "50 Arpa Naderman.mp4",
+    archiveId: "villa-medici-giulini-50-arpa-naderman",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-50-arpa-naderman"
+  },
+  {
+    id: 51,
+    name: "Arpa a pedali a movimento doppio Sébastien Erard, Londra, 1821, numero di serie N 3218",
+    audioFile: "51 F.J. Naderman (1772 ca.-1835).mpg",
+    archiveId: "villa-medici-giulini-51-f-j-naderman-1772-ca-1835",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-51-f-j-naderman-1772-ca-1835"
+  },
+  {
+    id: 52,
+    name: "Arpa a pedali a movimento doppio Sébastien Erard, Londra, 1825, numero di serie N 3704",
+    audioFile: "52 Arpa Sebastien Erard, Londra, 1825.mpg",
+    archiveId: "villa-medici-giulini-52-arpa-sebastien-erard-londra-1825",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-52-arpa-sebastien-erard-londra-1825"
+  },
+  {
+    id: 53,
+    name: "Salterio (25 cori) Italia, fine del secolo XVIII",
+    audioFile: "53 Salterio (25 cori).mp4",
+    archiveId: "villa-medici-giulini-53-salterio-25-cori",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-53-salterio-25-cori"
+  },
+  {
+    id: 54,
+    name: "Salterio (24 cori) Italia, fine del secolo XVIII",
+    audioFile: "54 Salterio (24 cori).mpg",
+    archiveId: "villa-medici-giulini-54-salterio-24-cori",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-54-salterio-24-cori"
+  },
+  {
+    id: 55,
+    name: "Salterio (27 cori) Italia, ca. 1800",
+    year: "1800",
+    audioFile: "55 Salterio (27 cori).mpg",
+    archiveId: "villa-medici-giulini-55-salterio-27-cori",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-55-salterio-27-cori"
+  },
+  {
+    id: 56,
+    name: "Salterio (23 cori) Gran Bretagna (?), inizio del secolo XIX",
+    audioFile: "56 Salterio (23 cori).mp4",
+    archiveId: "villa-medici-giulini-56-salterio-23-cori",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-56-salterio-23-cori"
+  },
+  {
+    id: 57,
+    name: "Salterio (26 cori) Germania o Impero austro-ungarico (?), prima metà del secolo XIX",
+    audioFile: "57 Salterio (26 cori).mp4",
+    archiveId: "villa-medici-giulini-57-salterio-26-cori",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-57-salterio-26-cori"
+  },
+  {
+    id: 58,
+    name: "Mandolino a sei corde Carlo Albertini e figlio, Lombardia, prima metà del secolo XX",
+    audioFile: "58 Mandolino a sei corde Carlo Albertini e figlio, Lombardia, prima meta del secolo XX.mpg",
+    archiveId: "vmg-58-mandolino-a-sei-corde-carlo-albertini-e-figlio-lombardia-prima-meta-del-s",
+    embedUrl: "https://archive.org/embed/vmg-58-mandolino-a-sei-corde-carlo-albertini-e-figlio-lombardia-prima-meta-del-s"
+  },
+  {
+    id: 59,
+    name: "Mandolino napoletano Napoli, secolo XX",
+    audioFile: "59 Mandolino Napoli, secolo XX.mpg",
+    archiveId: "villa-medici-giulini-59-mandolino-napoli-secolo-xx",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-59-mandolino-napoli-secolo-xx"
+  },
+  {
+    id: 60,
+    name: "Chitarra Fernando del Perugia, Firenze, 1894",
+    audioFile: "60 Chitarra Fernando del Perugia, Firenze, 1894.mpg",
+    archiveId: "villa-medici-giulini-60-chitarra-fernando-del-perugia-firenze-1894",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-60-chitarra-fernando-del-perugia-firenze-1894"
+  },
+  {
+    id: 61,
+    name: "Fortepiano a coda \"Archinto\", Johann Schanz, Vienna, ca. 1816",
+    year: "1816",
+    audioFile: "61 Fortepiano JOHANN SCHANZ, \"Archinto\", Vienna, c.1816.mp4",
+    archiveId: "vmg-61-fortepiano-johann-schanz-archinto-vienna-c-1816",
+    embedUrl: "https://archive.org/embed/vmg-61-fortepiano-johann-schanz-archinto-vienna-c-1816"
+  },
+  {
+    id: 62,
+    name: "Pianoforte a coda \"Giulini\" Johann Heitzmann und Sohn, Vienna, ca. 1870",
+    year: "1870",
+    audioFile: "62 Pianoforte a coda JOHANN HEITZMANN UND SOHN, Vienna, c.1870.mp4",
+    archiveId: "villa-medici-giulini-62-pianoforte-a-coda-johann-heitzmann-und-sohn-vienna-c-1870",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-62-pianoforte-a-coda-johann-heitzmann-und-sohn-vienna-c-1870"
+  },
+  {
+    id: 63,
+    name: "Pianoforte a coda Pleyel Wolff et Compagnie, Parigi, 1885",
+    audioFile: "63 Pianoforte [A. WOLFF ET COMPAGNIE]  PLEYEL, Paris, 1885.mp4",
+    archiveId: "villa-medici-giulini-63-pianoforte-a-wolff-et-compagnie-pleyel-paris-1885",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-63-pianoforte-a-wolff-et-compagnie-pleyel-paris-1885"
+  },
+  {
+    id: 64,
+    name: "Pianoforte a coda Érard, Parigi, 1883",
+    audioFile: "64 Pianoforte a coda Erard, Parigi 1883.mp4",
+    archiveId: "villa-medici-giulini-64-pianoforte-a-coda-erard-parigi-1883",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-64-pianoforte-a-coda-erard-parigi-1883"
+  },
+  {
+    id: 65,
+    name: "Pianoforte a coda Erard, Parigi, 1892",
+    audioFile: "65 Pianoforte a coda Erard, Parigi 1892.mp4",
+    archiveId: "villa-medici-giulini-65-pianoforte-a-coda-erard-parigi-1892",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-65-pianoforte-a-coda-erard-parigi-1892"
+  },
+  {
+    id: 66,
+    name: "Arpa a pedali a movimento semplice Érard, Parigi, 1808, numero di serie N 123"
+  },
+  {
+    id: 67,
+    name: "Arpa a pedali a doppio movimento Érard, Parigi, ottobre 1919, numero di serie N 4114"
+  },
+  {
+    id: 68,
+    name: "Arpa a pedali a doppio movimento Érard, Parigi, 1902, numero di serie N 4584"
+  },
+  {
+    id: 69,
+    name: "Salterio Antonio Berti, Firenze, secondo quarto del secolo XVIII"
+  },
+  {
+    id: 70,
+    name: "Salterio italiano con scatola, Venezia, 1725-1740"
+  },
+  {
+    id: 71,
+    name: "Salterio Antonio Berti, Firenze, prima metà del secolo XVIII"
+  },
+  {
+    id: 72,
+    name: "Mandolino Nicola e Raffaele Calace, Napoli,1892, con scatola"
+  },
+  {
+    id: 73,
+    name: "Mandolino napoletano anonimo, fine del XIX secolo – inizio del XX"
+  },
+  {
+    id: 74,
+    name: "Fortepiano a coda \"Prearo\" Johannes Michael Schölly, Roma, 1793"
+  },
+  {
+    id: 75,
+    name: "Pianoforte a coda \"Bigatti\" Ernest Kaps, n.10188, Dresden, ca. 1885",
+    year: "1885"
+  },
+  {
+    id: 76,
+    name: "Pianoforte mezza coda aliquot Julius Blüthner, n.137200, Leipzig, 1971"
+  },
+  {
+    id: 77,
+    name: "Pianoforte a coda \"Montorfano\" Burger & Jacobi, n.28543, Madretsch, Bienne, 1931"
+  },
+  {
+    id: 78,
+    name: "Pianoforte a coda Pleyel, n.173871, Parigi, ca.",
+    year: "1923",
+    audioFile: "78_Pleyel Forte.mp4",
+    archiveId: "villa-medici-giulini-78-pianoforte-a-coda-pleyel-n-173871-parigi-ca-1923",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-78-pianoforte-a-coda-pleyel-n-173871-parigi-ca-1923"
+  },
+  {
+    id: 79,
+    name: "Pianoforte a coda \"Ravasio\" Augusto Tallone, n.2136/c.XXXI/91, Milano, 08-03-1960"
+  },
+  {
+    id: 80,
+    name: "Pianoforte mezza coda Modello O-180, Steinway & Sons, n. 238617, Amburgo, 1899"
+  },
+  {
+    id: 81,
+    name: "Pianoforte quarto di coda Steinway & Sons, Modello S-155 n.299308, New York-Hamburg, 1926"
+  },
+  {
+    id: 82,
+    name: "Pianoforte mezza coda Modello A-188 Steinway & Sons n.484418, Amburgo, 1983",
+    year: "1983"
+  },
+  {
+    id: 83,
+    name: "Pianoforte mezza coda Yamaha G1 RE 4700115, Hamamatsu, 1989"
+  },
+  {
+    id: 84,
+    name: "Pianoforte mezza coda Yamaha G1 RE 4800351 Hamamatsu, 1989"
+  },
+  {
+    id: 85,
+    name: "Pianoforte mezza coda Yamaha G2 E 1853242, Hamamatsu, 1974"
+  },
+  {
+    id: 86,
+    name: "Harmonium Kaslier E ca., Parigi, ca. 1930",
+    year: "1930"
+  },
+  {
+    id: 87,
+    name: "Le Guide Chant Kaslier E ca., Parigi, ca. 1930",
+    year: "1930"
+  },
+  {
+    id: 88,
+    name: "Violino Giuseppe Pedrazzini (1879-1957), Milano, 1920",
+    audioFile: "88_EUGENIO_VIOLINO_migliorato.mp4",
+    archiveId: "villa-medici-giulini-88-violino-giuseppe-pedrazzini-milano-1920",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-88-violino-giuseppe-pedrazzini-milano-1920"
+  },
+  {
+    id: 89,
+    name: "Violino da bambino, metà del secolo XX"
+  },
+  {
+    id: 90,
+    name: "Violino Maidstone, inizio del secolo XX"
+  },
+  {
+    id: 91,
+    name: "Violino Stefano Caponnetto, Catania, primo quarto del secolo XX"
+  },
+  {
+    id: 92,
+    name: "Viola Wenzl Fuchs, 1960"
+  }
+];

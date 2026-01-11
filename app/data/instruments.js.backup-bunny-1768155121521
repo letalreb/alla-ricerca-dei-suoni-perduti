@@ -177,11 +177,7 @@ export const instruments = [
     year: "1834",
     audioFile: "16 Fortepiano C. GRAF, Vienna, c. 1834.mp4",
     archiveId: "villa-medici-giulini-16-fortepiano-c-graf-vienna-c-1834",
-    embedUrl: "https://archive.org/embed/villa-medici-giulini-16-fortepiano-c-graf-vienna-c-1834",
-    bunnyMethod: "stream",
-    bunnyVideoGuid: "e567d68e-f35b-4208-92d9-72be672e6b37",
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/e567d68e-f35b-4208-92d9-72be672e6b37",
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/e567d68e-f35b-4208-92d9-72be672e6b37"
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-16-fortepiano-c-graf-vienna-c-1834"
   },
   {
     id: 17,
@@ -830,11 +826,7 @@ export const instruments = [
     name: "Violino Giuseppe Pedrazzini (1879-1957), Milano, 1920",
     audioFile: "88_EUGENIO_VIOLINO.mp4",
     archiveId: "villa-medici-giulini-88-violino-giuseppe-pedrazzini-milano-1920",
-    embedUrl: "https://archive.org/embed/villa-medici-giulini-88-violino-giuseppe-pedrazzini-milano-1920",
-    bunnyMethod: "stream",
-    bunnyVideoGuid: "8ae9a263-26ad-476c-bf2f-7ee029d1ee8d",
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/8ae9a263-26ad-476c-bf2f-7ee029d1ee8d",
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/8ae9a263-26ad-476c-bf2f-7ee029d1ee8d"
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-88-violino-giuseppe-pedrazzini-milano-1920"
   },
   {
     id: 89,
