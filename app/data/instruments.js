@@ -108,9 +108,9 @@ export const instruments = [
     archiveId: "villa-medici-giulini-10-fortepiano-a-coda-nannette-stein-e-matthaus-andreas-stein",
     embedUrl: "https://archive.org/embed/villa-medici-giulini-10-fortepiano-a-coda-nannette-stein-e-matthaus-andreas-stein",
     bunnyMethod: "stream",
-    bunnyVideoGuid: "9332c2d1-76ba-49b5-af57-995a8660a9a0",
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/9332c2d1-76ba-49b5-af57-995a8660a9a0",
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/9332c2d1-76ba-49b5-af57-995a8660a9a0"
+    bunnyVideoGuid: "25b75bda-edb3-4234-bebd-26739cdc70e5",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/25b75bda-edb3-4234-bebd-26739cdc70e5",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/25b75bda-edb3-4234-bebd-26739cdc70e5"
   },
   {
     id: 11,
