@@ -103,7 +103,7 @@ export const instruments = [
   },
   {
     id: 10,
-    name: "Fortepiano a coda Nannette Stein e Matthäus Andreas Stein (Frère et Soeur Stein), Vienna, tra il 1794 e 1802 (N. 10 della collezione) Pianoforte a mezza coda Steinway & Sons A-188, Amburgo, 1983 (N. 82 della collezione)",
+    name: "Fortepiano a coda Nannette Stein e Matthäus Andreas Stein (Frère et Soeur Stein), Vienna, tra il 1794 e 1802 (N. 10 della collezione)\nPianoforte a mezza coda Steinway & Sons A-188, Amburgo, 1983 (N. 82 della collezione)",
     audioFile: "10 Fortepiano a coda, Nannette Stein e Matthaus Andreas Stein.mp4",
     archiveId: "villa-medici-giulini-10-fortepiano-a-coda-nannette-stein-e-matthaus-andreas-stein",
     embedUrl: "https://archive.org/embed/villa-medici-giulini-10-fortepiano-a-coda-nannette-stein-e-matthaus-andreas-stein",
