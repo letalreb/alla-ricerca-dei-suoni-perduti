@@ -48,7 +48,7 @@ export const instruments = [
   },
   {
     id: 5,
-    name: "Spinetta trapezoidale all'ottava Rinaldo Bertoni, Bologna, 1707 (N. 5 della collezione) - Pianoforte a coda Steinway & Sons Modello S, New York, 1926 (N. 81 della collezione)",
+    name: "Spinetta trapezoidale all'ottava Rinaldo Bertoni, Bologna, 1707 (N. 5 della collezione) Pianoforte a coda Steinway & Sons Modello S, New York, 1926 (N. 81 della collezione)",
     audioFile: "05 Spinetta Bertoni.mp4",
     archiveId: "villa-medici-giulini-05-spinetta-bertoni",
     embedUrl: "https://archive.org/embed/villa-medici-giulini-05-spinetta-bertoni",
@@ -59,14 +59,14 @@ export const instruments = [
   },
   {
     id: 6,
-    name: "Spinetta rettangolare all'ottava Hieronimus (Girolamo) Bassi, Venezia, 1713",
+    name: "Spinetta rettangolare all'ottava Hieronimus (Girolamo) Bassi, Venezia, 1713 (N. 6 della collezione) Pianoforte a coda Steinway & Sons Modello S, New York, 1926 (N. 81 della collezione)",
     audioFile: "06 Spinetta Bassi.mp4",
     archiveId: "villa-medici-giulini-06-spinetta-bassi",
     embedUrl: "https://archive.org/embed/villa-medici-giulini-06-spinetta-bassi",
     bunnyMethod: "stream",
-    bunnyVideoGuid: "1aa84bca-db2b-4c48-95c1-08734de888dc",
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/1aa84bca-db2b-4c48-95c1-08734de888dc",
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/1aa84bca-db2b-4c48-95c1-08734de888dc"
+    bunnyVideoGuid: "d4f17369-3c77-4682-ad7c-d2b8b81045ff",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/d4f17369-3c77-4682-ad7c-d2b8b81045ff",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/d4f17369-3c77-4682-ad7c-d2b8b81045ff"
   },
   {
     id: 7,
@@ -103,14 +103,14 @@ export const instruments = [
   },
   {
     id: 10,
-    name: "Fortepiano a coda Nannette Stein e Matthäus Andreas Stein (Frère et Soeur Stein), Vienna, tra il 1794 e il 1802",
+    name: "Fortepiano a coda Nannette Stein e Matthäus Andreas Stein (Frère et Soeur Stein), Vienna, tra il 1794 e 1802 (N. 10 della collezione) Pianoforte a mezza coda Steinway & Sons A-188, Amburgo, 1983 (N. 82 della collezione)",
     audioFile: "10 Fortepiano a coda, Nannette Stein e Matthaus Andreas Stein.mp4",
     archiveId: "villa-medici-giulini-10-fortepiano-a-coda-nannette-stein-e-matthaus-andreas-stein",
     embedUrl: "https://archive.org/embed/villa-medici-giulini-10-fortepiano-a-coda-nannette-stein-e-matthaus-andreas-stein",
     bunnyMethod: "stream",
-    bunnyVideoGuid: "25b75bda-edb3-4234-bebd-26739cdc70e5",
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/25b75bda-edb3-4234-bebd-26739cdc70e5",
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/25b75bda-edb3-4234-bebd-26739cdc70e5"
+    bunnyVideoGuid: "cabd8356-36c2-468c-90cf-46d87416f4d85",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/cabd8356-36c2-468c-90cf-46d87416f4d85",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/cabd8356-36c2-468c-90cf-46d87416f4d85"
   },
   {
     id: 11,
@@ -150,14 +150,14 @@ export const instruments = [
   },
   {
     id: 14,
-    name: "Fortepiano a coda Johann Schantz, Vienna, 1810-20",
+    name: "Fortepiano a coda Johann Schantz, Vienna, 1810-20 (N. 14 della collezione) Pianoforte a mezza coda Steinway & Sons A-188, Amburgo, 1983 (N. 82 della collezione)",
     audioFile: "14 Fortepiano J. SCHANZ, Vienna, 1810-1820.mp4",
     archiveId: "villa-medici-giulini-14-fortepiano-j-schanz-vienna-1810-1820",
     embedUrl: "https://archive.org/embed/villa-medici-giulini-14-fortepiano-j-schanz-vienna-1810-1820",
     bunnyMethod: "stream",
-    bunnyVideoGuid: "23843e05-1418-40aa-bfa1-cb9e1eae48f5",
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/23843e05-1418-40aa-bfa1-cb9e1eae48f5",
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/23843e05-1418-40aa-bfa1-cb9e1eae48f5"
+    bunnyVideoGuid: "9bbdc5e0-beec-4aeb-a4ce-510ffb7d8c87",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/9bbdc5e0-beec-4aeb-a4ce-510ffb7d8c87",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/9bbdc5e0-beec-4aeb-a4ce-510ffb7d8c87"
   },
   {
     id: 15,
@@ -289,14 +289,14 @@ export const instruments = [
   },
   {
     id: 26,
-    name: "Fortepiano da boudoir (con scatola da cucito), Vienna (?), prima metà del secolo XIX",
+    name: "Fortepiano da boudoir (con scatola da cucito), Vienna (?), prima metà del secolo XIX (N. 26 della collezione) Pianoforte a coda Steinway & Sons Modello B, Amburgo, 1990 (N. 38 della collezione)",
     audioFile: "26 Fortepiano da boudoir (con scatola da cucito).mpg",
     archiveId: "villa-medici-giulini-26-fortepiano-da-boudoir-con-scatola-da-cucito",
     embedUrl: "https://archive.org/embed/villa-medici-giulini-26-fortepiano-da-boudoir-con-scatola-da-cucito",
     bunnyMethod: "stream",
-    bunnyVideoGuid: "1657dc5c-df3a-4ce4-bdb8-8e1bbaff9700",
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/1657dc5c-df3a-4ce4-bdb8-8e1bbaff9700",
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/1657dc5c-df3a-4ce4-bdb8-8e1bbaff9700"
+    bunnyVideoGuid: "3d39061c-eb02-4a08-96a7-197c1e3a15eb",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/3d39061c-eb02-4a08-96a7-197c1e3a15eb",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/3d39061c-eb02-4a08-96a7-197c1e3a15eb"
   },
   {
     id: 27,
@@ -304,25 +304,25 @@ export const instruments = [
   },
   {
     id: 28,
-    name: "Fortepiano a tavolo Fratelli Elli, Milano, 1800",
+    name: "Fortepiano a tavolo Fratelli Elli, Milano, 1800 (N. 28 della collezione) Pianoforte a coda Steinway & Sons Modello B, Amburgo, 1990 (N. 38 della collezione)",
     audioFile: "28 Fortepiano a tavolo FRATELLI ELLI, Milano, 1800.mp4",
     archiveId: "villa-medici-giulini-28-fortepiano-a-tavolo-fratelli-elli-milano-1800",
     embedUrl: "https://archive.org/embed/villa-medici-giulini-28-fortepiano-a-tavolo-fratelli-elli-milano-1800",
     bunnyMethod: "stream",
-    bunnyVideoGuid: "deccc7a4-2a52-4157-aff2-c5d535833c63",
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/deccc7a4-2a52-4157-aff2-c5d535833c63",
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/deccc7a4-2a52-4157-aff2-c5d535833c63"
+    bunnyVideoGuid: "674147ee-dca0-4259-862f-17f5ec141b53",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/674147ee-dca0-4259-862f-17f5ec141b53",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/674147ee-dca0-4259-862f-17f5ec141b53"
   },
   {
     id: 29,
-    name: "Fortepiano a tavolo Gaetano Scappa, Milano, 1796",
+    name: "Fortepiano a tavolo Gaetano Scappa, Milano, 1796 (N. 29 della collezione) Pianoforte a coda Steinway & Sons Modello B, Amburgo, 1990 (N. 38 della collezione)",
     audioFile: "29 Fortepiano G. SCAPPA, Milano, 1796.mp4",
     archiveId: "villa-medici-giulini-29-fortepiano-g-scappa-milano-1796",
     embedUrl: "https://archive.org/embed/villa-medici-giulini-29-fortepiano-g-scappa-milano-1796",
     bunnyMethod: "stream",
-    bunnyVideoGuid: "05982627-316b-4207-abce-26f92f611fbf",
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/05982627-316b-4207-abce-26f92f611fbf",
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/05982627-316b-4207-abce-26f92f611fbf"
+    bunnyVideoGuid: "05f7adef-56db-432b-9f82-f65a265bd7dc",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/05f7adef-56db-432b-9f82-f65a265bd7dc",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/05f7adef-56db-432b-9f82-f65a265bd7dc"
   },
   {
     id: 30,
@@ -670,15 +670,15 @@ export const instruments = [
   },
   {
     id: 61,
-    name: "Fortepiano a coda \"Archinto\", Johann Schanz, Vienna, ca. 1816",
+    name: "Fortepiano a coda \"Archinto\", Johann Schanz, Vienna, ca. 1816 (N. 61 della collezione) Pianoforte a mezza coda Steinway & Sons A-188, Amburgo, 1983 (N. 82 della collezione)",
     year: "1816",
     audioFile: "61 Fortepiano JOHANN SCHANZ, \"Archinto\", Vienna, c.1816.mp4",
     archiveId: "vmg-61-fortepiano-johann-schanz-archinto-vienna-c-1816",
     embedUrl: "https://archive.org/embed/vmg-61-fortepiano-johann-schanz-archinto-vienna-c-1816",
     bunnyMethod: "stream",
-    bunnyVideoGuid: "4e0f4be7-98f9-4c75-a42d-5584592d6e3f",
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/4e0f4be7-98f9-4c75-a42d-5584592d6e3f",
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/4e0f4be7-98f9-4c75-a42d-5584592d6e3f"
+    bunnyVideoGuid: "acc971e1-1ce0-40ac-92a9-e7194e627cb9",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/acc971e1-1ce0-40ac-92a9-e7194e627cb9",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/acc971e1-1ce0-40ac-92a9-e7194e627cb9"
   },
   {
     id: 62,
