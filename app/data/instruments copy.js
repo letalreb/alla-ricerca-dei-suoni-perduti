@@ -48,14 +48,14 @@ export const instruments = [
   },
   {
     id: 5,
-    name: "Spinetta trapezoidale all'ottava Rinaldo Bertoni, Bologna, 1707 (N. 5 della collezione) - Pianoforte a coda Steinway & Sons Modello S, New York, 1926 (N. 81 della collezione)",
+    name: "Spinetta trapezoidale all'ottava Rinaldo Bertoni, Bologna, 1707",
     audioFile: "05 Spinetta Bertoni.mp4",
     archiveId: "villa-medici-giulini-05-spinetta-bertoni",
     embedUrl: "https://archive.org/embed/villa-medici-giulini-05-spinetta-bertoni",
     bunnyMethod: "stream",
-    bunnyVideoGuid: "49b4e39f-e245-44ee-a1bf-8c709de41277",
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/49b4e39f-e245-44ee-a1bf-8c709de41277",
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/49b4e39f-e245-44ee-a1bf-8c709de41277"
+    bunnyVideoGuid: "27b50735-74f9-4b6a-8aff-578f5dff064d",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/27b50735-74f9-4b6a-8aff-578f5dff064d",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/27b50735-74f9-4b6a-8aff-578f5dff064d"
   },
   {
     id: 6,
