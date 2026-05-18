@@ -759,7 +759,11 @@ export const instruments = [
   },
   {
     id: 74,
-    name: "Fortepiano a coda \"Prearo\" Johannes Michael Schölly, Roma, 1793"
+    name: "Fortepiano a coda \"Prearo\" Johannes Michael Schölly, Roma, 1793",
+    bunnyMethod: "stream",
+    bunnyVideoGuid: "8b67ba79-804e-4375-a917-127f4608b4a6",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/8b67ba79-804e-4375-a917-127f4608b4a6",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/8b67ba79-804e-4375-a917-127f4608b4a6"
   },
   {
     id: 75,
