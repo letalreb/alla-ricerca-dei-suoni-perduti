@@ -64,6 +64,15 @@ export default function InstrumentCard({ instrument }) {
   const hasAudio = !!instrument.audioFile;
   const isAudio = hasAudio && instrument.audioFile.endsWith('.mp3');
 
+  const collectionNumbers = [...instrument.name.matchAll(/N\.\s*(\d+)\s*della collezione/g)].map(match => match[1]);
+  let badgeNumbers = [String(instrument.id)];
+  if (collectionNumbers.length > 0) {
+    badgeNumbers = collectionNumbers;
+  } else if (instrument.pairedWith) {
+    badgeNumbers = [String(instrument.id), String(instrument.pairedWith)];
+  }
+  const isDoubleInstrument = badgeNumbers.length > 1;
+
   return (
     <Link href={`/strumenti/${instrument.id}`} className={styles.card}>
       <div className={styles.imageWrapper}>
@@ -98,7 +107,13 @@ export default function InstrumentCard({ instrument }) {
           </div>
         )}
       </div>
-      <div className={styles.number}>{instrument.id}</div>
+      <div className={isDoubleInstrument ? styles.numberStack : undefined}>
+        {badgeNumbers.map(num => (
+          <div key={num} className={isDoubleInstrument ? styles.numberSmall : styles.number}>
+            {num}
+          </div>
+        ))}
+      </div>
       <div className={styles.content}>
         <h3 className={styles.name}>{instrument.name}</h3>
         <div className={styles.details}>

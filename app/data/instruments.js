@@ -103,7 +103,7 @@ export const instruments = [
   },
   {
     id: 10,
-    name: "Fortepiano a coda Nannette Stein e Matthäus Andreas Stein (Frère et Soeur Stein), Vienna, tra il 1794 e 1802 (N. 10 della collezione)\nPianoforte a mezza coda Steinway & Sons A-188, Amburgo, 1983 (N. 82 della collezione)",
+    name: "Fortepiano a coda Nannette Stein e Matthäus Andreas Stein (Frère et Soeur Stein), Vienna, tra il 1794 e 1802 (N. 10 della collezione) Pianoforte a mezza coda Steinway & Sons A-188, Amburgo, 1983 (N. 82 della collezione)",
     audioFile: "10 Fortepiano a coda, Nannette Stein e Matthaus Andreas Stein.mp4",
     archiveId: "villa-medici-giulini-10-fortepiano-a-coda-nannette-stein-e-matthaus-andreas-stein",
     embedUrl: "https://archive.org/embed/villa-medici-giulini-10-fortepiano-a-coda-nannette-stein-e-matthaus-andreas-stein",
@@ -138,15 +138,15 @@ export const instruments = [
   },
   {
     id: 13,
-    name: "Fortepiano a coda Johann Schantz, Vienna, ca.",
+    name: "Fortepiano a coda Johann Schantz, Vienna, ca. (N. 13 della collezione) Pianoforte a coda Steinway &amp; Sons Modello B, Amburgo, 1990 (N. 38 della collezione)",
     year: "1810",
     audioFile: "13 Fortepiano J. SCHANTZ, Vienna, c. 1810.mp4",
     archiveId: "villa-medici-giulini-13-fortepiano-j-schantz-vienna-c-1810",
     embedUrl: "https://archive.org/embed/villa-medici-giulini-13-fortepiano-j-schantz-vienna-c-1810",
     bunnyMethod: "stream",
-    bunnyVideoGuid: "33202a7d-9947-47b3-a4d3-ae2beb80d7a8",
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/33202a7d-9947-47b3-a4d3-ae2beb80d7a8",
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/33202a7d-9947-47b3-a4d3-ae2beb80d7a8"
+    bunnyVideoGuid: "23e47640-8d56-4c14-b2b3-2f70c4a3c9d7",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/23e47640-8d56-4c14-b2b3-2f70c4a3c9d7",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/23e47640-8d56-4c14-b2b3-2f70c4a3c9d7"
   },
   {
     id: 14,
@@ -244,14 +244,14 @@ export const instruments = [
   },
   {
     id: 22,
-    name: "Fortepiano a coda Ignace Pleyel, Parigi, 1839",
+    name: "Fortepiano a coda Ignace Pleyel, Parigi, 1839 (N. 22 della collezione) Pianoforte a mezza coda Steinway & Sons A-188, Amburgo, 1983 (N. 82 della collezione)",
     audioFile: "22 Fortepiano C. PLEYEL, Parigi, 1839.mp4",
     archiveId: "villa-medici-giulini-22-fortepiano-c-pleyel-parigi-1839",
     embedUrl: "https://archive.org/embed/villa-medici-giulini-22-fortepiano-c-pleyel-parigi-1839",
     bunnyMethod: "stream",
-    bunnyVideoGuid: "102fef0f-58ec-4984-abf7-dacb8ba72784",
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/102fef0f-58ec-4984-abf7-dacb8ba72784",
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/102fef0f-58ec-4984-abf7-dacb8ba72784"
+    bunnyVideoGuid: "20def1e7-911f-4ecf-852f-39c221f01877",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/20def1e7-911f-4ecf-852f-39c221f01877",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/20def1e7-911f-4ecf-852f-39c221f01877"
   },
   {
     id: 23,
@@ -694,25 +694,25 @@ export const instruments = [
   },
   {
     id: 63,
-    name: "Pianoforte a coda Pleyel Wolff et Compagnie, Parigi, 1885",
+    name: "Pianoforte a coda Pleyel Wolff et Compagnie, Parigi, 1885 (N. 63 della collezione) Pianoforte a mezza coda Steinway & Sons A-188, Amburgo, 1983 (N. 82 della collezione)",
     audioFile: "63 Pianoforte [A. WOLFF ET COMPAGNIE]  PLEYEL, Paris, 1885.mp4",
     archiveId: "villa-medici-giulini-63-pianoforte-a-wolff-et-compagnie-pleyel-paris-1885",
     embedUrl: "https://archive.org/embed/villa-medici-giulini-63-pianoforte-a-wolff-et-compagnie-pleyel-paris-1885",
     bunnyMethod: "stream",
-    bunnyVideoGuid: "92553afe-0d4d-436a-9916-cef125e57582",
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/92553afe-0d4d-436a-9916-cef125e57582",
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/92553afe-0d4d-436a-9916-cef125e57582"
+    bunnyVideoGuid: "a7d16f2d-f7be-4c3f-bc8b-ff102bab6a2c",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/a7d16f2d-f7be-4c3f-bc8b-ff102bab6a2c",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/a7d16f2d-f7be-4c3f-bc8b-ff102bab6a2c"
   },
   {
     id: 64,
-    name: "Pianoforte a coda Érard, Parigi, 1883",
+    name: "Pianoforte a coda Érard, Parigi, 1883 (N. 64 della collezione) Pianoforte a coda Steinway &amp; Sons Modello B, Amburgo, 1990 (N. 38 della collezione)",
     audioFile: "64 Pianoforte a coda Erard, Parigi 1883.mp4",
     archiveId: "villa-medici-giulini-64-pianoforte-a-coda-erard-parigi-1883",
     embedUrl: "https://archive.org/embed/villa-medici-giulini-64-pianoforte-a-coda-erard-parigi-1883",
     bunnyMethod: "stream",
-    bunnyVideoGuid: "8033d91f-a2ad-4e1b-b5e1-8f6cb0c7cf25",
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/8033d91f-a2ad-4e1b-b5e1-8f6cb0c7cf25",
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/8033d91f-a2ad-4e1b-b5e1-8f6cb0c7cf25"
+    bunnyVideoGuid: "ef8f26bb-8e2c-4e0b-9a53-632ef57f5cc8",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/ef8f26bb-8e2c-4e0b-9a53-632ef57f5cc8",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/ef8f26bb-8e2c-4e0b-9a53-632ef57f5cc8"
   },
   {
     id: 65,
@@ -801,12 +801,26 @@ export const instruments = [
   },
   {
     id: 81,
-    name: "Pianoforte quarto di coda Steinway & Sons, Modello S-155 n.299308, New York-Hamburg, 1926"
+    name: "Pianoforte quarto di coda Steinway & Sons, Modello S-155 n.299308, New York-Hamburg, 1926",
+    audioFile: "06 Spinetta Bassi.mp4",
+    archiveId: "villa-medici-giulini-06-spinetta-bassi",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-06-spinetta-bassi",
+    bunnyMethod: "stream",
+    bunnyVideoGuid: "d4f17369-3c77-4682-ad7c-d2b8b81045ff",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/d4f17369-3c77-4682-ad7c-d2b8b81045ff",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/d4f17369-3c77-4682-ad7c-d2b8b81045ff"
   },
   {
     id: 82,
-    name: "Pianoforte mezza coda Modello A-188 Steinway & Sons n.484418, Amburgo, 1983",
-    year: "1983"
+    name: "Pianoforte a mezza coda Steinway & Sons A-188, Amburgo, 1983 (N. 82 della collezione)",
+    year: "1983",
+    audioFile: "10 Fortepiano a coda, Nannette Stein e Matthaus Andreas Stein.mp4",
+    archiveId: "villa-medici-giulini-10-fortepiano-a-coda-nannette-stein-e-matthaus-andreas-stein",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-10-fortepiano-a-coda-nannette-stein-e-matthaus-andreas-stein",
+    bunnyMethod: "stream",
+    bunnyVideoGuid: "25b75bda-edb3-4234-bebd-26739cdc70e5",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/25b75bda-edb3-4234-bebd-26739cdc70e5",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/25b75bda-edb3-4234-bebd-26739cdc70e5"
   },
   {
     id: 83,

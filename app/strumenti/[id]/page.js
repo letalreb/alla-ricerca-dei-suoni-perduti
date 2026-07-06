@@ -23,9 +23,18 @@ export default async function InstrumentPage({ params }) {
 
   // Costruisce il percorso del file video
   // Usa il campo audioFile se disponibile, altrimenti usa un fallback
-  const videoPath = instrument.audioFile 
+  const videoPath = instrument.audioFile
     ? `/audio/${instrument.audioFile}`
     : null;
+
+  const collectionNumbers = [...instrument.name.matchAll(/N\.\s*(\d+)\s*della collezione/g)].map(match => match[1]);
+  let badgeNumbers = [String(instrument.id)];
+  if (collectionNumbers.length > 0) {
+    badgeNumbers = collectionNumbers;
+  } else if (instrument.pairedWith) {
+    badgeNumbers = [String(instrument.id), String(instrument.pairedWith)];
+  }
+  const isDoubleInstrument = badgeNumbers.length > 1;
 
   return (
     <div className={styles.container}>
@@ -35,7 +44,11 @@ export default async function InstrumentPage({ params }) {
 
       <div className={styles.content}>
         <div className={styles.header}>
-          <div className={styles.number}>N. {instrument.id}</div>
+          <div className={styles.numberBadges}>
+            {badgeNumbers.map(num => (
+              <div key={num} className={styles.number}>N. {num}</div>
+            ))}
+          </div>
           <h1 className={styles.title}>{instrument.name}</h1>
         </div>
 
@@ -61,7 +74,9 @@ export default async function InstrumentPage({ params }) {
         </div>
 
         <div className={styles.videoSection}>
-          <h2 className={styles.videoTitle}>Ascolta lo strumento</h2>
+          <h2 className={styles.videoTitle}>
+            {isDoubleInstrument ? 'Ascolta gli strumenti' : 'Ascolta lo strumento'}
+          </h2>
           {instrument.audioFile || instrument.bunnyMethod || instrument.archiveId ? (
             <UniversalPlayer instrument={instrument} />
           ) : videoPath ? (

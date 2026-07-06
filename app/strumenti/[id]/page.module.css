@@ -64,6 +64,13 @@
   justify-content: center;
 }
 
+.numberBadges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
 .number {
   display: inline-block;
   background: #8b1538;
@@ -72,7 +79,6 @@
   border-radius: 6px;
   font-size: 0.9rem;
   font-weight: 500;
-  margin-bottom: 1.5rem;
   letter-spacing: 0.5px;
 }
 
