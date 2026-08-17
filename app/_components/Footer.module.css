@@ -15,3 +15,21 @@
   margin: 0;
   font-weight: 400;
 }
+
+.notice {
+  color: #999999;
+  font-size: 0.75rem;
+  letter-spacing: 0.2px;
+  margin: 0.75rem auto 0;
+  font-weight: 300;
+  max-width: 600px;
+}
+
+.link {
+  color: #cccccc;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #ffffff;
+}

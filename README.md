@@ -2,15 +2,12 @@
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## ⚠️ Privacy & Indexing
+## SEO & Indexing
 
-This site is configured to **block all search engine crawlers and web spiders**:
-- ✅ `robots.txt` blocks all user agents
-- ✅ Meta tags with `noindex, nofollow, noarchive` 
-- ✅ Specific blocking for Google, Bing, Yahoo, and other major search engines
-- ✅ No sitemap generation
-
-The site is intended for private use only and will not appear in search engine results.
+This site is open to search engine crawlers and includes assets for Google Search Console:
+- `robots.txt` is generated from [app/robots.js](app/robots.js) and allows all user agents
+- `sitemap.xml` is generated from [app/sitemap.js](app/sitemap.js), listing the homepage and every instrument page
+- Update `SITE_URL` in both files (and `metadataBase` in [app/layout.js](app/layout.js)) if the production domain changes
 
 ## Getting Started
 
