@@ -773,7 +773,7 @@ export const instruments = [
     audioFile: "",
     archiveId: "villa-medici-giulini-Pianoforte-a-coda-Bigatti-Ernest-Kaps",
     embedUrl: "",
-    bunnyMethod: "stream",
+    bunnyMethod: "stream", 
     bunnyVideoGuid: "39331b2e-77c5-4346-94c8-539beb605752",
     bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/39331b2e-77c5-4346-94c8-539beb605752",
     bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/39331b2e-77c5-4346-94c8-539beb605752"
