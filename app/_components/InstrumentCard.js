@@ -61,8 +61,8 @@ export default function InstrumentCard({ instrument }) {
   };
 
   const thumbnailPath = getThumbnailPath();
-  const hasAudio = !!instrument.audioFile;
-  const isAudio = hasAudio && instrument.audioFile.endsWith('.mp3');
+  const hasAudio = !!instrument.audioFile || !!instrument.bunnyVideoGuid;
+  const isAudio = !!instrument.audioFile && instrument.audioFile.endsWith('.mp3');
 
   const collectionNumbers = [...instrument.name.matchAll(/N\.\s*(\d+)\s*della collezione/g)].map(match => match[1]);
   let badgeNumbers = [String(instrument.id)];
