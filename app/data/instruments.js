@@ -769,11 +769,26 @@ export const instruments = [
   {
     id: 75,
     name: "Pianoforte a coda \"Bigatti\" Ernest Kaps, n.10188, Dresden, ca. 1885",
-    year: "1885"
+    year: "1885",
+    audioFile: "",
+    archiveId: "villa-medici-giulini-Pianoforte-a-coda-Bigatti-Ernest-Kaps",
+    embedUrl: "",
+    bunnyMethod: "stream",
+    bunnyVideoGuid: "39331b2e-77c5-4346-94c8-539beb605752",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/39331b2e-77c5-4346-94c8-539beb605752",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/39331b2e-77c5-4346-94c8-539beb605752"
   },
   {
     id: 76,
-    name: "Pianoforte mezza coda aliquot Julius Blüthner, n.137200, Leipzig, 1971"
+    name: "Pianoforte mezza coda aliquot Julius Blüthner, n.137200, Leipzig, 1971",
+    year: "",
+    audioFile: "",
+    archiveId: "villa-medici-giulini-Pianoforte-mezz-coda-aliquot-Julius-Blüthner",
+    embedUrl: "",
+    bunnyMethod: "stream",
+    bunnyVideoGuid: "a7851e5e-4da0-4b60-b8a4-acdc9d33ec0b",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/a7851e5e-4da0-4b60-b8a4-acdc9d33ec0b",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/a7851e5e-4da0-4b60-b8a4-acdc9d33ec0b"
   },
   {
     id: 77,
@@ -793,7 +808,15 @@ export const instruments = [
   },
   {
     id: 79,
-    name: "Pianoforte a coda \"Ravasio\" Augusto Tallone, n.2136/c.XXXI/91, Milano, 08-03-1960"
+    name: "Pianoforte a coda \"Ravasio\" Augusto Tallone, n.2136/c.XXXI/91, Milano, 08-03-1960",
+    year: "",
+    audioFile: "",
+    archiveId: "villa-medici-giulini-Pianoforte-a-coda-Ravasio-Augusto-Tallone",
+    embedUrl: "https://archive.org/embed/villa-medici-giulini-10-fortepiano-a-coda-nannette-stein-e-matthaus-andreas-stein",
+    bunnyMethod: "stream",
+    bunnyVideoGuid: "e2bbf318-4363-4fb9-b24a-fb8c21ce5373",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/e2bbf318-4363-4fb9-b24a-fb8c21ce5373",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/e2bbf318-4363-4fb9-b24a-fb8c21ce5373"
   },
   {
     id: 80,
