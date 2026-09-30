@@ -2,12 +2,16 @@
 
 import ArchivePlayer from './ArchivePlayer';
 import BunnyPlayer from './BunnyPlayer';
+import { getDictionary } from '../data/dictionaries';
 
 /**
  * Universal Player che supporta sia Internet Archive che Bunny.net
  * Priorità: Bunny.net > Internet Archive
  */
-export default function UniversalPlayer({ instrument }) {
+export default function UniversalPlayer({ instrument, locale = 'it' }) {
+  const dict = getDictionary(locale);
+  const title = locale === 'en' ? (instrument.nameEn || instrument.name) : instrument.name;
+
   // Se disponibile Bunny.net, usalo
   if (instrument.bunnyMethod) {
     return (
@@ -16,7 +20,8 @@ export default function UniversalPlayer({ instrument }) {
         bunnyUrl={instrument.bunnyUrl}
         bunnyEmbedUrl={instrument.bunnyEmbedUrl}
         bunnyVideoGuid={instrument.bunnyVideoGuid}
-        title={instrument.name}
+        title={title}
+        locale={locale}
       />
     );
   }
@@ -27,7 +32,8 @@ export default function UniversalPlayer({ instrument }) {
       <ArchivePlayer
         archiveId={instrument.archiveId}
         embedUrl={instrument.embedUrl}
-        title={instrument.name}
+        title={title}
+        locale={locale}
       />
     );
   }
@@ -42,7 +48,7 @@ export default function UniversalPlayer({ instrument }) {
       color: '#666',
       fontStyle: 'italic'
     }}>
-      <p>Video non disponibile</p>
+      <p>{dict.videoUnavailable}</p>
     </div>
   );
 }

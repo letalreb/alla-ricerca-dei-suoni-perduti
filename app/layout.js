@@ -1,6 +1,4 @@
 /* eslint-disable react/prop-types */
-import Header from './_components/Header';
-import Footer from './_components/Footer';
 import './globals.css';
 
 export const metadata = {
@@ -22,9 +20,7 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Lato:wght@300;400;500;600&display=swap" rel="stylesheet" />
       </head>
       <body suppressHydrationWarning={true}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );

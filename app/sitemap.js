@@ -8,6 +8,12 @@ export default function sitemap() {
       url: SITE_URL,
       changeFrequency: 'monthly',
       priority: 1,
+      alternates: {
+        languages: {
+          it: SITE_URL,
+          en: `${SITE_URL}/en`,
+        },
+      },
     },
   ];
 
@@ -15,6 +21,12 @@ export default function sitemap() {
     url: `${SITE_URL}/strumenti/${instrument.id}`,
     changeFrequency: 'yearly',
     priority: 0.7,
+    alternates: {
+      languages: {
+        it: `${SITE_URL}/strumenti/${instrument.id}`,
+        en: `${SITE_URL}/en/strumenti/${instrument.id}`,
+      },
+    },
   }));
 
   return [...staticRoutes, ...instrumentRoutes];

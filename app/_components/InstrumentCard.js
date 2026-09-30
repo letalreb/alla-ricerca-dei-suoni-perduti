@@ -1,9 +1,13 @@
 /* eslint-disable react/prop-types */
 import Link from 'next/link';
 import Image from 'next/image';
+import { getDictionary } from '../data/dictionaries';
 import styles from './InstrumentCard.module.css';
 
-export default function InstrumentCard({ instrument }) {
+export default function InstrumentCard({ instrument, locale = 'it' }) {
+  const dict = getDictionary(locale);
+  const displayName = locale === 'en' ? (instrument.nameEn || instrument.name) : instrument.name;
+  const href = locale === 'en' ? `/en/strumenti/${instrument.id}` : `/strumenti/${instrument.id}`;
   // IDs degli strumenti non in grado di suonare
   const notPlayableIds = [];
   const isNotPlayable = notPlayableIds.includes(instrument.id);
@@ -74,12 +78,12 @@ export default function InstrumentCard({ instrument }) {
   const isDoubleInstrument = badgeNumbers.length > 1;
 
   return (
-    <Link href={`/strumenti/${instrument.id}`} className={styles.card}>
+    <Link href={href} className={styles.card}>
       <div className={styles.imageWrapper}>
         {thumbnailPath && !isAudio ? (
-          <Image 
+          <Image
             src={thumbnailPath}
-            alt={instrument.name}
+            alt={displayName}
             width={800}
             height={600}
             className={styles.thumbnail}
@@ -96,7 +100,7 @@ export default function InstrumentCard({ instrument }) {
         )}
         {!hasAudio && (
           <div className={isNotPlayable ? styles.notPlayable : styles.comingSoon}>
-            {isNotPlayable ? 'Non in grado di suonare' : 'Coming Soon'}
+            {isNotPlayable ? dict.notPlayable : dict.comingSoon}
           </div>
         )}
         {hasAudio && (
@@ -109,13 +113,16 @@ export default function InstrumentCard({ instrument }) {
       </div>
       <div className={isDoubleInstrument ? styles.numberStack : undefined}>
         {badgeNumbers.map(num => (
-          <div key={num} className={isDoubleInstrument ? styles.numberSmall : styles.number}>
+          <div
+            key={num}
+            className={`${isDoubleInstrument ? styles.numberSmall : styles.number} ${hasAudio ? styles.numberPlayable : ''}`}
+          >
             {num}
           </div>
         ))}
       </div>
       <div className={styles.content}>
-        <h3 className={styles.name}>{instrument.name}</h3>
+        <h3 className={styles.name}>{displayName}</h3>
         <div className={styles.details}>
           {instrument.author && <p className={styles.author}>{instrument.author}</p>}
           {instrument.location && <p className={styles.location}>{instrument.location}</p>}

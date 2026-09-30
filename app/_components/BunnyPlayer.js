@@ -1,15 +1,18 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { getDictionary } from '../data/dictionaries';
 import styles from './BunnyPlayer.module.css';
 
-export default function BunnyPlayer({ 
-  bunnyMethod, 
-  bunnyUrl, 
-  bunnyEmbedUrl, 
+export default function BunnyPlayer({
+  bunnyMethod,
+  bunnyUrl,
+  bunnyEmbedUrl,
   bunnyVideoGuid,
-  title 
+  title,
+  locale = 'it'
 }) {
+  const dict = getDictionary(locale);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -20,7 +23,7 @@ export default function BunnyPlayer({
   if (!bunnyMethod || (!bunnyUrl && !bunnyEmbedUrl)) {
     return (
       <div className={styles.placeholder}>
-        <p>Video non disponibile su Bunny.net</p>
+        <p>{dict.videoUnavailableBunny}</p>
       </div>
     );
   }
@@ -32,7 +35,7 @@ export default function BunnyPlayer({
         {isLoading && (
           <div className={styles.loading}>
             <div className={styles.spinner}></div>
-            <p>Caricamento video...</p>
+            <p>{dict.loadingVideo}</p>
           </div>
         )}
         <iframe
@@ -42,7 +45,7 @@ export default function BunnyPlayer({
           frameBorder="0"
           allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
           allowFullScreen
-          title={title || 'Video strumento musicale'}
+          title={title || dict.videoUnavailable}
           onLoad={() => setIsLoading(false)}
           className={styles.iframe}
         />
@@ -57,7 +60,7 @@ export default function BunnyPlayer({
         {isLoading && (
           <div className={styles.loading}>
             <div className={styles.spinner}></div>
-            <p>Caricamento video...</p>
+            <p>{dict.loadingVideo}</p>
           </div>
         )}
         <video
@@ -67,7 +70,7 @@ export default function BunnyPlayer({
           preload="metadata"
         >
           <source src={bunnyUrl} type="video/mp4" />
-          Il tuo browser non supporta il tag video.
+          {dict.videoNotSupportedTag}
         </video>
       </div>
     );
@@ -75,7 +78,7 @@ export default function BunnyPlayer({
 
   return (
     <div className={styles.placeholder}>
-      <p>Configurazione video non valida</p>
+      <p>{dict.invalidVideoConfig}</p>
     </div>
   );
 }

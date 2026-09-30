@@ -1,9 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { getDictionary } from '../data/dictionaries';
 import styles from './ArchivePlayer.module.css';
 
-export default function ArchivePlayer({ archiveId, embedUrl, title }) {
+export default function ArchivePlayer({ archiveId, embedUrl, title, locale = 'it' }) {
+  const dict = getDictionary(locale);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -13,7 +15,7 @@ export default function ArchivePlayer({ archiveId, embedUrl, title }) {
   if (!archiveId || !embedUrl) {
     return (
       <div className={styles.placeholder}>
-        <p>Video non disponibile</p>
+        <p>{dict.videoUnavailable}</p>
       </div>
     );
   }
@@ -23,7 +25,7 @@ export default function ArchivePlayer({ archiveId, embedUrl, title }) {
       {isLoading && (
         <div className={styles.loading}>
           <div className={styles.spinner}></div>
-          <p>Caricamento video...</p>
+          <p>{dict.loadingVideo}</p>
         </div>
       )}
       <iframe
@@ -33,7 +35,7 @@ export default function ArchivePlayer({ archiveId, embedUrl, title }) {
         frameBorder="0"
         allow="fullscreen"
         allowFullScreen
-        title={title || 'Video strumento musicale'}
+        title={title || dict.videoUnavailable}
         onLoad={() => setIsLoading(false)}
         className={styles.iframe}
       />
