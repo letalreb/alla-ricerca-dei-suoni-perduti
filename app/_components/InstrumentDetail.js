@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { instruments } from '../data/instruments';
 import { getDictionary } from '../data/dictionaries';
 import UniversalPlayer from './UniversalPlayer';
+import BackToCollectionLink from './BackToCollectionLink';
 import styles from './InstrumentDetail.module.css';
 
 export default function InstrumentDetail({ id, locale = 'it' }) {
@@ -15,9 +16,9 @@ export default function InstrumentDetail({ id, locale = 'it' }) {
       <div className={styles.container}>
         <div className={styles.notFound}>
           <h1>{dict.notFoundTitle}</h1>
-          <Link href={homePath} className={styles.backLink}>
+          <BackToCollectionLink href={homePath} className={styles.backLink}>
             {dict.backToCollection}
-          </Link>
+          </BackToCollectionLink>
         </div>
       </div>
     );
@@ -42,9 +43,9 @@ export default function InstrumentDetail({ id, locale = 'it' }) {
 
   return (
     <div className={styles.container}>
-      <Link href={homePath} className={styles.backLink}>
+      <BackToCollectionLink href={homePath} className={styles.backLink}>
         {dict.backToCollection}
-      </Link>
+      </BackToCollectionLink>
 
       <div className={styles.content}>
         <div className={styles.header}>

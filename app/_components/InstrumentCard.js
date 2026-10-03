@@ -1,7 +1,10 @@
 /* eslint-disable react/prop-types */
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { getDictionary } from '../data/dictionaries';
+import { saveHomeScroll } from './homeScrollMemory';
 import styles from './InstrumentCard.module.css';
 
 export default function InstrumentCard({ instrument, locale = 'it' }) {
@@ -78,7 +81,7 @@ export default function InstrumentCard({ instrument, locale = 'it' }) {
   const isDoubleInstrument = badgeNumbers.length > 1;
 
   return (
-    <Link href={href} className={styles.card}>
+    <Link href={href} className={styles.card} onClick={() => saveHomeScroll(locale)}>
       <div className={styles.imageWrapper}>
         {thumbnailPath && !isAudio ? (
           <Image

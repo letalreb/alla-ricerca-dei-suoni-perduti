@@ -16,7 +16,7 @@ export const instruments = [
   },
   {
     id: 2,
-    name: "Cembalo \"Ottoboni\", Italia, (Roma?), seconda metà del secolo XVII",
+    name: "Cembalo \"Ottoboni\", Italia, (Roma?), \nseconda metà del secolo XVII",
     nameEn: "Harpsichord \"Ottoboni\", Italy (Rome?), second half of the 17th century",
     audioFile: "02 Cembalo Ottoboni.mp4",
     archiveId: "villa-medici-giulini-02-cembalo-ottoboni",
