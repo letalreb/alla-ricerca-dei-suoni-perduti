@@ -849,9 +849,9 @@ export const instruments = [
     archiveId: "villa-medici-giulini-Pianoforte-a-coda-Bigatti-Ernest-Kaps",
     embedUrl: "",
     bunnyMethod: "stream", 
-    bunnyVideoGuid: "951ec5d5-d0fa-420e-98d6-1b7c98e67318",
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/951ec5d5-d0fa-420e-98d6-1b7c98e67318",
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/951ec5d5-d0fa-420e-98d6-1b7c98e67318"
+    bunnyVideoGuid: "947a1b16-fdbf-441d-b865-7525670e496a",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/947a1b16-fdbf-441d-b865-7525670e496a",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/947a1b16-fdbf-441d-b865-7525670e496a"
   },
   {
     id: 76,
@@ -862,9 +862,9 @@ export const instruments = [
     archiveId: "villa-medici-giulini-Pianoforte-mezz-coda-aliquot-Julius-Blüthner",
     embedUrl: "",
     bunnyMethod: "stream",
-    bunnyVideoGuid: "8fa1f156-6d37-41d7-88ba-89514a8b1cd7",
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/8fa1f156-6d37-41d7-88ba-89514a8b1cd7",
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/8fa1f156-6d37-41d7-88ba-89514a8b1cd7"
+    bunnyVideoGuid: "bab81b37-bfaf-41d6-b391-2283215de7de",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/bab81b37-bfaf-41d6-b391-2283215de7de",
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/bab81b37-bfaf-41d6-b391-2283215de7de"
   },
   {
     id: 77,
