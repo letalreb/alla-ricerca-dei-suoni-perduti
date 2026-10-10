@@ -54,7 +54,7 @@ export default function InstrumentDetail({ id, locale = 'it' }) {
               <div key={num} className={styles.number}>N. {num}</div>
             ))}
           </div>
-          <h1 className={styles.title}>{displayName}</h1>
+          <h1 className={styles.title} title={displayName}>{displayName}</h1>
         </div>
 
         <div className={styles.details}>

@@ -24,6 +24,7 @@ export default function InstrumentCard({ instrument, locale = 'it' }) {
     31: '31 Fortepiano a tavolo Italia, seconda metà del secolo XVIII.jpg',
     51: '51 Arpa Sébastien Erard, Londra, 1821.jpg',
     59: '59 Mandolino, Napoli, XX secolo.jpg',
+    64: '64 Pianoforte a coda Erard, Parigi 1883.jpg',
     66: '66 Arpa a pedali a movimento semplice Érard, Parigi, 1808, numero di serie N 123 BERNASCONI.jpg',
     67: '67 Arpa a pedali a doppio movimento Érard, Parigi, ottobre 1919, numero di serie N 4114 DALL\'ARA.jpg',
     68: '68 Arpa a pedali a doppio movimento Érard _Bassi_, Parigi, 1902, numero di serie N 4584.jpg',
@@ -125,10 +126,10 @@ export default function InstrumentCard({ instrument, locale = 'it' }) {
         ))}
       </div>
       <div className={styles.content}>
-        <h3 className={styles.name}>{displayName}</h3>
+        <h3 className={styles.name} title={displayName}>{displayName}</h3>
         <div className={styles.details}>
-          {instrument.author && <p className={styles.author}>{instrument.author}</p>}
-          {instrument.location && <p className={styles.location}>{instrument.location}</p>}
+          {instrument.author && <p className={styles.author} title={instrument.author}>{instrument.author}</p>}
+          {instrument.location && <p className={styles.location} title={instrument.location}>{instrument.location}</p>}
           {instrument.year && <p className={styles.year}>{instrument.year}</p>}
         </div>
       </div>
