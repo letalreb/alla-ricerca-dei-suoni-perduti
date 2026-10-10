@@ -30,8 +30,6 @@ export const dictionaries = {
     footerPrivacy: 'Privacy e Cookie Policy: questo sito non utilizza cookie di profilazione o tracciamento.',
     footerRights: "È vietata la riproduzione, copia o diffusione, con qualsiasi mezzo, del materiale fotografico e audio relativo agli strumenti musicali, di proprietà di Villa Medici Giulini srl, senza autorizzazione scritta.",
     languageSwitchLabel: 'EN',
-    viewToggleClassic: 'Vista classica',
-    viewToggleModern: 'Vista moderna',
   },
   en: {
     headerSubtitle: 'The collection of musical instruments',
@@ -64,8 +62,6 @@ export const dictionaries = {
     footerPrivacy: 'Privacy and Cookie Policy: this site does not use profiling or tracking cookies.',
     footerRights: 'Reproduction, copying or distribution, by any means, of the photographic and audio material relating to the musical instruments, property of Villa Medici Giulini srl, is prohibited without written authorization.',
     languageSwitchLabel: 'IT',
-    viewToggleClassic: 'Classic view',
-    viewToggleModern: 'Modern view',
   },
 };
 

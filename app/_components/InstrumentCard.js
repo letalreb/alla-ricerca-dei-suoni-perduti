@@ -7,9 +7,8 @@ import { getDictionary } from '../data/dictionaries';
 import { saveHomeScroll } from './homeScrollMemory';
 import styles from './InstrumentCard.module.css';
 
-export default function InstrumentCard({ instrument, locale = 'it', variant = 'classic' }) {
+export default function InstrumentCard({ instrument, locale = 'it' }) {
   const dict = getDictionary(locale);
-  const isModern = variant === 'modern';
   const displayName = locale === 'en' ? (instrument.nameEn || instrument.name) : instrument.name;
   const href = locale === 'en' ? `/en/strumenti/${instrument.id}` : `/strumenti/${instrument.id}`;
   // IDs degli strumenti non in grado di suonare
@@ -82,82 +81,51 @@ export default function InstrumentCard({ instrument, locale = 'it', variant = 'c
   }
   const isDoubleInstrument = badgeNumbers.length > 1;
 
-  const image = thumbnailPath && !isAudio ? (
-    <Image
-      src={thumbnailPath}
-      alt={displayName}
-      width={800}
-      height={600}
-      className={isModern ? styles.thumbnailModern : styles.thumbnail}
-      loading="lazy"
-      placeholder="blur"
-      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWEREiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
-    />
-  ) : (
-    <div className={styles.placeholder}>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
-      </svg>
-    </div>
-  );
-
-  const playIcon = (
-    <div className={isModern ? styles.playIconModern : styles.playIcon}>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M8 5v14l11-7z"/>
-      </svg>
-    </div>
-  );
-
-  const statusBadge = (
-    <div className={isNotPlayable ? styles.notPlayable : styles.comingSoon}>
-      {isNotPlayable ? dict.notPlayable : dict.comingSoon}
-    </div>
-  );
-
-  const numbers = (
-    <div className={isDoubleInstrument ? styles.numberStack : undefined}>
-      {badgeNumbers.map(num => (
-        <div
-          key={num}
-          className={`${isDoubleInstrument ? styles.numberSmall : styles.number} ${hasAudio ? styles.numberPlayable : ''} ${isModern ? styles.numberModern : ''}`}
-        >
-          {num}
-        </div>
-      ))}
-    </div>
-  );
-
-  if (isModern) {
-    return (
-      <Link href={href} className={styles.cardModern} onClick={() => saveHomeScroll(locale)}>
-        <div className={styles.imageWrapperModern}>
-          {image}
-          {!hasAudio && statusBadge}
-          {hasAudio && playIcon}
-        </div>
-        {numbers}
-        <div className={styles.overlayModern}>
-          <h3 className={styles.nameModern} title={displayName}>{displayName}</h3>
-          <div className={styles.detailsModern}>
-            {instrument.author && <p className={styles.authorModern} title={instrument.author}>{instrument.author}</p>}
-            {instrument.location && <p className={styles.locationModern} title={instrument.location}>{instrument.location}</p>}
-            {instrument.year && <p className={styles.yearModern}>{instrument.year}</p>}
-          </div>
-        </div>
-      </Link>
-    );
-  }
-
   return (
     <Link href={href} className={styles.card} onClick={() => saveHomeScroll(locale)}>
       <div className={styles.imageWrapper}>
-        {image}
-        {!hasAudio && statusBadge}
-        {hasAudio && playIcon}
+        {thumbnailPath && !isAudio ? (
+          <Image
+            src={thumbnailPath}
+            alt={displayName}
+            width={800}
+            height={600}
+            className={styles.thumbnail}
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWEREiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+          />
+        ) : (
+          <div className={styles.placeholder}>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+            </svg>
+          </div>
+        )}
+        {!hasAudio && (
+          <div className={isNotPlayable ? styles.notPlayable : styles.comingSoon}>
+            {isNotPlayable ? dict.notPlayable : dict.comingSoon}
+          </div>
+        )}
+        {hasAudio && (
+          <div className={styles.playIcon}>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+        )}
       </div>
-      {numbers}
-      <div className={styles.content}>
+      <div className={isDoubleInstrument ? styles.numberStack : undefined}>
+        {badgeNumbers.map(num => (
+          <div
+            key={num}
+            className={`${isDoubleInstrument ? styles.numberSmall : styles.number} ${hasAudio ? styles.numberPlayable : ''}`}
+          >
+            {num}
+          </div>
+        ))}
+      </div>
+      <div className={styles.overlay}>
         <h3 className={styles.name} title={displayName}>{displayName}</h3>
         <div className={styles.details}>
           {instrument.author && <p className={styles.author} title={instrument.author}>{instrument.author}</p>}
