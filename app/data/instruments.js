@@ -1655,11 +1655,11 @@ export const instruments = [
 
     bunnyMethod: "stream",
 
-    bunnyVideoGuid: "39331b2e-77c5-4346-94c8-539beb605752",
+    bunnyVideoGuid: "947a1b16-fdbf-441d-b865-7525670e496a",
 
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/39331b2e-77c5-4346-94c8-539beb605752",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/947a1b16-fdbf-441d-b865-7525670e496a",
 
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/39331b2e-77c5-4346-94c8-539beb605752"
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/947a1b16-fdbf-441d-b865-7525670e496a"
 
   },
 
@@ -1679,11 +1679,11 @@ export const instruments = [
 
     bunnyMethod: "stream",
 
-    bunnyVideoGuid: "a7851e5e-4da0-4b60-b8a4-acdc9d33ec0b",
+    bunnyVideoGuid: "bab81b37-bfaf-41d6-b391-2283215de7de",
 
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/a7851e5e-4da0-4b60-b8a4-acdc9d33ec0b",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/bab81b37-bfaf-41d6-b391-2283215de7de",
 
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/a7851e5e-4da0-4b60-b8a4-acdc9d33ec0b"
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/bab81b37-bfaf-41d6-b391-2283215de7de"
 
   },
 
@@ -1737,11 +1737,11 @@ export const instruments = [
 
     bunnyMethod: "stream",
 
-    bunnyVideoGuid: "e2bbf318-4363-4fb9-b24a-fb8c21ce5373",
+    bunnyVideoGuid: "785da387-e369-4ba4-a950-59306dba67ff",
 
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/e2bbf318-4363-4fb9-b24a-fb8c21ce5373",
+    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/785da387-e369-4ba4-a950-59306dba67ff",
 
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/e2bbf318-4363-4fb9-b24a-fb8c21ce5373"
+    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/785da387-e369-4ba4-a950-59306dba67ff"
 
   },
 
