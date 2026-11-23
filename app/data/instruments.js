@@ -693,9 +693,9 @@ export const instruments = [
 
     id: 30,
 
-    name: "Fortepiano a tavolo dipinto, Italia (?),\nseconda metà del XVIII secolo",
+    name: "Clavicordo, Italia (?),\nseconda metà del XVIII secolo",
 
-    nameEn: "Square piano with a painting, Italy (?), \nsecond half of the eighteenth century",
+    nameEn: "Clavichord, Italy (?), \nsecond half of the eighteenth century",
 
     audioFile: "30 Fortepiano dipinto, Italia, sec. XVIII.mp4",
 
@@ -1279,9 +1279,9 @@ export const instruments = [
 
     id: 55,
 
-    name: "Salterio (27 cori), Italia, ca. 1800",
+    name: "Salterio (27 cori), Spagna, ca. 1800",
 
-    nameEn: "Psaltery (27 courses), Italy, about 1800",
+    nameEn: "Psaltery (27 courses), Spain, about 1800",
 
     audioFile: "55 Salterio (27 cori).mpg",
 
@@ -1693,7 +1693,7 @@ export const instruments = [
 
     name: "Pianoforte a coda \"Montorfano\" Burger & Jacobi, \nn.28543, Madretsch, Bienne, 1931",
 
-    nameEn: "Grand piano \"Montorfano\" Burger & Jacobi, \nno. 28543, Madretsch, Bienne, 1931",
+    nameEn: "Grand piano \"Montorfano\" Burger & Jacobi, \nno. 28543, Madretsch, Bienne, 1931"
 
   },
 
@@ -1703,22 +1703,7 @@ export const instruments = [
 
     name: "Pianoforte a coda Pleyel, n.173871, \nParigi, ca. 1923",
 
-    nameEn: "Grand piano Pleyel, no. 173871, \nParis, about 1923",
-
-    audioFile: "78_Pleyel Forte.mp4",
-
-    archiveId: "villa-medici-giulini-78-pianoforte-a-coda-pleyel-n-173871-parigi-ca-1923",
-
-    embedUrl: "https://archive.org/embed/villa-medici-giulini-78-pianoforte-a-coda-pleyel-n-173871-parigi-ca-1923",
-
-    bunnyMethod: "stream",
-
-    bunnyVideoGuid: "d95767a5-f3e2-4d66-acab-026b11033f3c",
-
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/d95767a5-f3e2-4d66-acab-026b11033f3c",
-
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/d95767a5-f3e2-4d66-acab-026b11033f3c"
-
+    nameEn: "Grand piano Pleyel, no. 173871, \nParis, about 1923"
   },
 
   {
@@ -1751,7 +1736,7 @@ export const instruments = [
 
     name: "Pianoforte mezza coda Modello O-180 \nSteinway & Sons, n. 238617, \nAmburgo, 1926",
 
-    nameEn: "Baby grand piano Model O-180 \nSteinway & Sons, no. 238617, \nHamburg, 1926",
+    nameEn: "Baby grand piano Model O-180 \nSteinway & Sons, no. 238617, \nHamburg, 1926"
 
   },
 
@@ -1761,22 +1746,7 @@ export const instruments = [
 
     name: "Pianoforte quarto di coda Modello S-155 \nSteinway & Sons, n.299308, \nNew York-Hamburg, 1939",
 
-    nameEn: "Baby grand piano Model S-155 \nSteinway & Sons, n.299308, \nNew York-Hamburg, 1939",
-
-    audioFile: "06 Spinetta Bassi.mp4",
-
-    archiveId: "villa-medici-giulini-06-spinetta-bassi",
-
-    embedUrl: "https://archive.org/embed/villa-medici-giulini-06-spinetta-bassi",
-
-    bunnyMethod: "stream",
-
-    bunnyVideoGuid: "d4f17369-3c77-4682-ad7c-d2b8b81045ff",
-
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/d4f17369-3c77-4682-ad7c-d2b8b81045ff",
-
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/d4f17369-3c77-4682-ad7c-d2b8b81045ff"
-
+    nameEn: "Baby grand piano Model S-155 \nSteinway & Sons, n.299308, \nNew York-Hamburg, 1939"
   },
 
   {
@@ -1785,21 +1755,7 @@ export const instruments = [
 
     name: "Pianoforte mezza coda Modello A-188 \nSteinway & Sons, n.484418, \nAmburgo, 1983",
 
-    nameEn: "Baby grand piano Model A-188 \nSteinway & Sons, n.484418, \nHamburg, 1983",
-
-    audioFile: "10 Fortepiano a coda, Nannette Stein e Matthaus Andreas Stein.mp4",
-
-    archiveId: "villa-medici-giulini-10-fortepiano-a-coda-nannette-stein-e-matthaus-andreas-stein",
-
-    embedUrl: "https://archive.org/embed/villa-medici-giulini-10-fortepiano-a-coda-nannette-stein-e-matthaus-andreas-stein",
-
-    bunnyMethod: "stream",
-
-    bunnyVideoGuid: "25b75bda-edb3-4234-bebd-26739cdc70e5",
-
-    bunnyEmbedUrl: "https://iframe.mediadelivery.net/embed/578573/25b75bda-edb3-4234-bebd-26739cdc70e5",
-
-    bunnyDirectUrl: "https://iframe.mediadelivery.net/play/578573/25b75bda-edb3-4234-bebd-26739cdc70e5"
+    nameEn: "Baby grand piano Model A-188 \nSteinway & Sons, n.484418, \nHamburg, 1983"
 
   },
 
@@ -1809,7 +1765,7 @@ export const instruments = [
 
     name: "Pianoforte mezza coda Yamaha G1 \nRE 4700115, Hamamatsu, 1989",
 
-    nameEn: "Baby grand piano Yamaha G1 RE 4700115, Hamamatsu, 1989",
+    nameEn: "Baby grand piano Yamaha G1 RE 4700115, Hamamatsu, 1989"
 
   },
 
@@ -1819,7 +1775,7 @@ export const instruments = [
 
     name: "Pianoforte mezza coda Yamaha, \nG1 RE 4800351 Hamamatsu, 1989",
 
-    nameEn: "Baby grand piano Yamaha, \nG1 RE 4800351, Hamamatsu, 1989",
+    nameEn: "Baby grand piano Yamaha, \nG1 RE 4800351, Hamamatsu, 1989"
 
   },
 
